@@ -2,6 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
+@layer base {
+    .montserrat-thin {
+      @apply font-montserrat font-thin;
+    }
+  
+    .montserrat-light {
+      @apply font-montserrat font-light;
+    }
+  
+    .montserrat-regular {
+      @apply font-montserrat font-regular;
+    }
+  
+    .montserrat-bold {
+      @apply font-montserrat font-bold;
+    }
+  
+    .montserrat-black {
+      @apply font-montserrat font-black;
+    }
 
-}
+
+    .khand-light {
+        @apply font-khand font-light;
+      }
+      
+      .khand-regular {
+        @apply font-khand font-normal;
+      }
+      
+      .khand-medium {
+        @apply font-khand font-medium;
+      }
+      
+      .khand-semibold {
+        @apply font-khand font-semibold;
+      }
+      
+      .khand-bold {
+        @apply font-khand font-bold;
+      }
+  }
