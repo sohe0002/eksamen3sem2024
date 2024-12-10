@@ -1,0 +1,86 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from "../components/Button.astro";
+---
+
+<MainLayout title="Abonnement">
+  <section class="px-xl">
+    <h1 class="font-khand text-h2_desk text-grå-900">ABONNEMENT</h1>
+    <hr class="w-full border-grå-900 border" />
+    <div
+      class="breadcrumb flex justify-between font-montserrat text-p_lilledesk text-grå-900 pb-lg"
+    >
+      <a href="/abonnement1" class="hover:underline">1. Vælg Kaffe</a>
+      <a href="/abonnement2" class="hover:underline">2. Vælg Abonnement</a>
+      <a href="/abonnement3" class="font-bold hover:underline"
+        >3. Vælg Frekvensen</a
+      >
+      <a href="/abonnement4" class="hover:underline">4. Føj til Kurven</a>
+    </div>
+  </section>
+
+  <section class="px-xl pb-lg">
+    <div class="grid grid-cols-2 gap-8">
+      <div class="bg-grå-300 px-md py-md">
+        <h2 class="text-h2_desk font-khand text-center">HVER 4. UGE</h2>
+
+        <p class="text-p_mobil font-montserrat text-center text-grå-900">
+          Fra 315 DKK
+        </p>
+        <p
+          class="text-p_lilledesk font-montserrat text-center text-grå-900 py-xs"
+        >
+          Du vil modtage 3 poser (3 x 250 gr) kaffe ved hver forsendelse.
+        </p>
+        <p
+          class="text-p_lilledesk
+          font-montserrat
+          text-center
+          text-grå-900"
+        >
+          Vi sender abonnementerne hver fjerde uge. Du kan afmelde abonnementet
+          til hver en tid.
+        </p>
+
+        <p class="text-p_mobil font-montserrat text-center text-grå-900 py-s">
+          Vi forventer at afsende dit første abonnement: 12/12/2024
+        </p>
+
+        <a class="grid justify-items-center" href="/abonnement4"
+          ><Button>VÆLG</Button></a
+        >
+      </div>
+
+      <div class="bg-grøn-300 p-md">
+        <h2 class="text-h2_desk font-khand text-center">HVER 2. UGE</h2>
+        <p class="text-p_mobil font-montserrat text-center text-grå-900">
+          Fra 340 DKK
+        </p>
+
+        <p
+          class="text-p_lilledesk font-montserrat text-center text-grå-900 py-xs"
+        >
+          Du vil modtage 2 poser (2 x 250 gr) kaffe ved hver forsendelse.
+        </p>
+
+        <p
+          class="text-p_lilledesk
+          font-montserrat
+          text-center
+          text-grå-900"
+        >
+          Vi sender abonnementerne hveranden uge. Du kan afmelde abonnementet
+          til hver en tid.
+        </p>
+
+        <p class="text-p_mobil font-montserrat text-center text-grå-900 py-s">
+          Vi forventer at afsende dit første abonnement: 12/12/2024
+        </p>
+
+        <a class="grid justify-items-center" href="/abonnement4"
+          ><Button>VÆLG</Button></a
+        >
+      </div>
+    </div>
+  </section>
+</MainLayout>

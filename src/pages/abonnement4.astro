@@ -1,0 +1,95 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import BorderButton from "../components/BorderButton.astro";
+import Button from "../components/Button.astro";
+---
+
+<MainLayout title="Abonnement">
+  <section class="px-xl">
+    <h1 class="font-khand text-h2_desk text-grå-900">ABONNEMENT</h1>
+    <hr class="w-full border-grå-900 border" />
+    <div
+      class="breadcrumb flex justify-between font-montserrat text-p_lilledesk text-grå-900 pb-lg"
+    >
+      <a href="/abonnement1" class="hover:underline">1. Vælg Kaffe</a>
+      <a href="/abonnement2" class="hover:underline">2. Vælg Abonnement</a>
+      <a href="/abonnement3" class="hover:underline">3. Vælg Frekvensen</a>
+      <a href="/abonnement4" class="font-bold hover:underline"
+        >4. Føj til Kurven</a
+      >
+    </div>
+  </section>
+
+  <section class="px-xl pb-lg">
+    <div class="grid grid-cols-2 gap-8">
+      <div>
+        <div class="pb-s">
+          <p class="font-khand text-h4_desk font-bold text-grå-900">KAFFE</p>
+          <p class="font-khand text-h4_desk text-grå-900">FILTERKAFFE</p>
+        </div>
+        <div class="pb-s">
+          <p class="font-khand text-h4_desk font-bold text-grå-900">
+            ABONNEMENT
+          </p>
+          <p class="font-khand text-h4_desk text-grå-900">VI OVERRASKER DIG!</p>
+        </div>
+        <div>
+          <p class="font-khand text-h4_desk font-bold text-grå-900">FREKVENS</p>
+          <p class="font-khand text-h4_desk text-grå-900">HVER 4. UGE</p>
+        </div>
+      </div>
+      <div>
+        <p class="font-khand text-h4_desk font-bold text-grå-900">
+          HVOR SKAL VI SENDE KAFFEN TIL?
+        </p>
+        <div class="flex justify-start gap-4 pt-xs pb-s">
+          <!-- DANMARK -->
+          <label class="cursor-pointer">
+            <input
+              type="radio"
+              name="region"
+              value="danmark"
+              class="peer hidden"
+            />
+            <div
+              class="border border-grå-900 text-grå-900 text-h4_desk font-khand px-xs py-xxs peer-checked:bg-red-500 peer-checked:text-white peer-checked:border-red-500"
+            >
+              DANMARK
+            </div>
+          </label>
+
+          <!-- RESTEN AF VERDEN -->
+          <label class="cursor-pointer">
+            <input
+              type="radio"
+              name="region"
+              value="resten-af-verden"
+              class="peer hidden"
+            />
+            <div
+              class="border border-grå-900 text-grå-900 text-h4_desk font-khand px-xs py-xxs peer-checked:bg-red-500 peer-checked:text-white peer-checked:border-red-500"
+            >
+              RESTEN AF VERDEN
+            </div>
+          </label>
+        </div>
+
+        <p class="font-khand text-h4_desk font-bold text-grå-900">
+          DIN KONTO HOS COFFEE COLLECTIVE
+        </p>
+        <div class="flex justify-start gap-4 pt-xs pb-s">
+          <a class="grid justify-items-center" href="/logind"
+            ><BorderButton>LOG IND</BorderButton></a
+          >
+          <a class="grid justify-items-center" href="/opretkonto"
+            ><BorderButton>OPRET KONTO</BorderButton></a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <a class="grid justify-items-center" href="/takforbestilling"
+    ><Button>FØJ TIL KURVEN</Button></a
+  >
+</MainLayout>
