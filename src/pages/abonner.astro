@@ -1,0 +1,51 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from "../components/Button.astro";
+import { Image } from "astro:assets";
+import kaffeabonnement from "../assets/images/kaffeabonnement.png";
+---
+
+<MainLayout title="Abonner">
+  <article class="px-xl">
+    <h1 class="font-khand text-grå-900 text-h2_desk">
+      KVALITETSKAFFE DIREKTE TIL DØREN
+    </h1>
+    <div class="grid grid-cols-2">
+      <div>
+        <p class="font-montserrat text-grå-900 text-p_lilledesk py-xs">
+          Med vores kaffeabonnement får du friskristet kaffe leveret direkte til
+          din postkasse – helt efter dine præferencer. Vælg mellem forskellige
+          typer og leveringsintervaller, så du altid har din favoritkaffe lige
+          ved hånden. Vi sørger for, at kaffen er ristet til perfektion og sendt
+          afsted, mens smagen er på sit allerbedste. En nem og fleksibel løsning
+          til kaffeelskere, der ikke vil gå på kompromis.
+        </p>
+
+        <div class="grid grid-cols-2 py-s">
+          <div>
+            <p class="font-montserrat text-grå-900 text-p_lilledesk">
+              2 ugers abonnement fra:
+            </p>
+            <p class="font-montserrat text-grå-900 text-p_lilledesk">
+              4 ugers abonnement fra:
+            </p>
+          </div>
+          <div>
+            <p class="font-montserrat text-grå-900 text-p_lilledesk">
+              240 DKK / 2 uger
+            </p>
+            <p class="font-montserrat text-grå-900 text-p_lilledesk">
+              315 DKK / 4 uger
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2">
+          <Button>ABONNEMENT FAQ</Button>
+          <a href="/abonnement1"><Button>FIND ABONNEMENT</Button></a>
+        </div>
+      </div>
+      <Image src={kaffeabonnement} alt="billeder af 4 kaffeposer" />
+    </div>
+  </article>
+</MainLayout>

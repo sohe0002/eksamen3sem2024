@@ -79,13 +79,14 @@ export default {
       },
 
       spacing: {
-        "padding-xs": "15px",
-        "padding-s": "30px",
-        "padding-md": "60px",
-        "padding-lg": "80px",
-        "padding-xl": "110px",
-        "padding-2xl": "140px",
-        "padding-3xl": "18px",
+        xxs: "8px",
+        xs: "15px",
+        s: "30px",
+        md: "60px",
+        lg: "80px",
+        xl: "110px",
+        "2xl": "140px",
+        "3xl": "180px",
       },
 
       fontFamily: {
@@ -103,6 +104,24 @@ export default {
         bold: 700,
         extraBold: 800,
         black: 900,
+      },
+
+      fontSize: {
+        p_desk: ["20px", { lineHeight: "1.75rem" }],
+        p_stordesk: ["24px", { lineHeight: "1.75rem" }],
+        p_lilledesk: ["16px", { lineHeight: "1.75rem" }],
+        h4_desk: ["24px", { lineHeight: "2.25rem" }],
+        h3_desk: ["31px", { lineHeight: "3rem" }],
+        h2_desk: ["58px", { lineHeight: "3.75rem" }],
+        h1_desk: ["96px", { lineHeight: "4.5rem" }],
+
+        p_mobil: ["12px", { lineHeight: "1.50rem" }],
+        p_lillemobil: ["10px", { lineHeight: "1.50rem" }],
+        p_stormobil: ["14px", { lineHeight: "1.50rem" }],
+        h4_mobil: ["14px", { lineHeight: "2.25rem" }],
+        h3_mobil: ["17px", { lineHeight: "3rem" }],
+        h2_mobil: ["24px", { lineHeight: "" }],
+        h1_mobil: ["48px", { lineHeight: "4.5rem" }],
       },
 
       /* Tilføj dit typografiske hierarki herunder */
