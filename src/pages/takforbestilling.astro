@@ -1,0 +1,35 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import BorderButton from "../components/BorderButton.astro";
+import Button from "../components/Button.astro";
+import { Image } from "astro:assets";
+import kaffekopper from "../assets/images/kaffekopper.png";
+---
+
+<MainLayout title="Takforbestilling">
+  <section class="px-xl pb-lg">
+    <Image
+      src={kaffekopper}
+      alt="billeder af 2 kaffekopper"
+      class="mx-auto pt-lg"
+    />
+    <h1
+      class="font-khand text-h1_desk text-grå-900 text-center font-bold py-md"
+    >
+      TAK FOR DIN BESTILLING!
+    </h1>
+    <p class="font-montserrat text-p_desk text-grå-900 text-center">
+      Vi har modtaget din ordre, og vi er allerede i gang med at forberede den.
+      Du vil modtage en ordrebekræftelse på e-mail med alle detaljer om dit køb.
+    </p>
+
+    <p
+      class="font-bold pt-s pb-xs font-montserrat text-p_desk text-gray-900 text-center"
+    >
+      Tak for at du handlede hos os!
+    </p>
+    <p class="font-montserrat text-p_desk text-grå-900 text-center">
+      Vi håber, du nyder din bæredygtige kvalitetskaffe fra Coffee Collective!
+    </p>
+  </section>
+</MainLayout>
