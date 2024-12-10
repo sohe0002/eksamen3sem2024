@@ -1,0 +1,60 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from "../components/Button.astro";
+import { Image } from "astro:assets";
+import filtergruppe from "../assets/images/filtergruppe.png";
+import espressogruppe from "../assets/images/espressogruppe.png";
+---
+
+<MainLayout title="Abonnement">
+  <section class="px-xl">
+    <h2 class="font-khand text-h2_desk text-grå-900">ABONNEMENT</h2>
+    <hr class="w-full border-grå-900 border" />
+    <div
+      class="breadcrumb flex justify-between font-montserrat text-p_lilledesk text-grå-900 pb-lg"
+    >
+      <a href="step1.html" class="font-bold hover:underline">1. Vælg Kaffe</a>
+      <a href="step2.html" class="hover:underline">2. Vælg Abonnement</a>
+      <a href="step3.html" class="hover:underline">3. Vælg Frekvensen</a>
+      <a href="step4.html" class="hover:underline">4. Føj til Kurven</a>
+    </div>
+  </section>
+
+  <section class="px-xl">
+    <div class="grid grid-cols-2 gap-8">
+      <div class="bg-grå-300 px-md py-md">
+        <h2 class="text-h2_desk font-khand text-center">FILTER</h2>
+        <Image
+          src={filtergruppe}
+          alt="billeder af 3 filter kaffeposer"
+          class="mx-auto"
+        />
+
+        <p class="text-p_mobil font-montserrat text-center text-grå-900 py-s">
+          Hele bønner. Gode til Kalita Wave, AeroPress, V60, French press og
+          filtermaskiner.
+        </p>
+
+        <a class="grid justify-items-center" href="/abonnement1"
+          ><Button>FIND ABONNEMENT</Button></a
+        >
+      </div>
+
+      <div class="bg-grøn-300 p-md">
+        <h2 class="text-h2_desk font-khand text-center">ESPRESSO</h2>
+        <Image
+          src={espressogruppe}
+          alt="billeder af 3 espresso kaffeposer"
+          class="mx-auto"
+        />
+        <p class="text-p_mobil font-montserrat text-center text-grå-900 py-s">
+          Hele bønner. Gode til espressomaskine og mokkakande.
+        </p>
+
+        <a class="grid justify-items-center" href="/abonnement1"
+          ><Button>FIND ABONNEMENT</Button></a
+        >
+      </div>
+    </div>
+  </section>
+</MainLayout>
