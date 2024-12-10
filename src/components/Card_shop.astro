@@ -1,0 +1,15 @@
+---
+const {
+  cardimage = "",
+  cardimagealt = "",
+
+  kaffenavn = "",
+} = Astro.props;
+---
+
+<section class="text-center max-w-96">
+  <div>
+    <img src={cardimage} alt={cardimagealt} class="max-h-96" />
+  </div>
+  <p class="">{kaffenavn}</p>
+</section>
