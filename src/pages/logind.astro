@@ -1,0 +1,69 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from "../components/Button.astro";
+import LysBorderButton from "../components/LysBorderButton.astro";
+---
+
+<MainLayout title="Abonnement">
+  <section class="px-xl pb-md">
+    <h1 class="font-khand text-h2_mobil md:text-h2_desk text-grå-900">
+      DIN KONTO
+    </h1>
+    <hr class="w-full border-grå-900 border" />
+
+    <div class="md:grid md:grid-cols-2 pt-s pb-lg gap-12">
+      <section>
+        <h2 class="font-khand text-h3_mobil md:text-h3_desk md:pb-s">
+          LOG IND
+        </h2>
+
+        <div class="">
+          <form class="w-full max-w-lg space-y-4">
+            <!-- Email input -->
+            <div>
+              <label
+                for="email"
+                class="block text-sm font-montserrat font-medium text-gray-900"
+              ></label>
+              <input
+                type="email"
+                id="email"
+                class="w-full p-4 bg-grå-400 text-gray-900 font-montserrat"
+                placeholder="E-mail"
+              />
+            </div>
+
+            <!-- Password input -->
+            <div>
+              <label
+                for="password"
+                class="block text-sm font-montserrat font-medium text-gray-900"
+              ></label>
+              <input
+                type="password"
+                id="password"
+                class="w-full p-4 bg-grå-400 font-montserrat text-gray-900"
+                placeholder="Password"
+              />
+            </div>
+          </form>
+          <a class="grid justify-items-center pb-lg pt-s" href="/logind"
+            ><Button>LOG IND</Button></a
+          >
+        </div>
+      </section>
+
+      <section class="bg-grå-800 px-xl pt-xl pb-lg">
+        <p
+          class="font-montserrat text-brun-50 text-p_stormobil md:text-p_stordesk text-center pb-md"
+        >
+          Har du ikke allerede en konto hos os, så opret en bruger
+        </p>
+
+        <a class="grid justify-items-center" href="/opretkonto"
+          ><LysBorderButton>OPRET BRUGER</LysBorderButton></a
+        >
+      </section>
+    </div>
+  </section>
+</MainLayout>

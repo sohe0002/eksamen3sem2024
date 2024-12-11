@@ -10,30 +10,40 @@ import Button from "../components/Button.astro";
     <div
       class="breadcrumb flex justify-between font-montserrat text-p_lilledesk text-grå-900 pb-lg"
     >
-      <a href="/abonnement1" class="hover:underline">1. Vælg Kaffe</a>
-      <a href="/abonnement2" class="hover:underline">2. Vælg Abonnement</a>
+      <a href="/abonnement1" class="hidden md:block hover:underline"
+        >1. Vælg Kaffe</a
+      >
+      <a href="/abonnement2" class="hidden md:block hover:underline"
+        >2. Vælg Abonnement</a
+      >
       <a href="/abonnement3" class="font-bold hover:underline"
         >3. Vælg Frekvensen</a
       >
-      <a href="/abonnement4" class="hover:underline">4. Føj til Kurven</a>
+      <a href="/abonnement4" class="hidden md:block hover:underline"
+        >4. Føj til Kurven</a
+      >
     </div>
   </section>
 
   <section class="px-xl pb-lg">
-    <div class="grid grid-cols-2 gap-8">
-      <div class="bg-grå-300 px-md py-md">
-        <h2 class="text-h2_desk font-khand text-center">HVER 4. UGE</h2>
+    <div class="md:grid md:grid-cols-2 gap-8">
+      <div class="bg-grå-300 px-md py-md mb-md md:mb-0">
+        <h2 class="text-h2_mobil md:text-h2_desk font-khand text-center">
+          HVER 4. UGE
+        </h2>
 
-        <p class="text-p_mobil font-montserrat text-center text-grå-900">
+        <p
+          class="text-p_lillemobil md:text-p_mobil font-montserrat text-center text-grå-900"
+        >
           Fra 315 DKK
         </p>
         <p
-          class="text-p_lilledesk font-montserrat text-center text-grå-900 py-xs"
+          class="text-p_mobil md:text-p_lilledesk font-montserrat text-center text-grå-900 py-xs"
         >
           Du vil modtage 3 poser (3 x 250 gr) kaffe ved hver forsendelse.
         </p>
         <p
-          class="text-p_lilledesk
+          class="text-p_mobil md:text-p_lilledesk
           font-montserrat
           text-center
           text-grå-900"
@@ -42,7 +52,9 @@ import Button from "../components/Button.astro";
           til hver en tid.
         </p>
 
-        <p class="text-p_mobil font-montserrat text-center text-grå-900 py-s">
+        <p
+          class="text-p_lillemobil md:text-p_mobil font-montserrat text-center text-grå-900 py-s"
+        >
           Vi forventer at afsende dit første abonnement: 12/12/2024
         </p>
 
@@ -52,19 +64,23 @@ import Button from "../components/Button.astro";
       </div>
 
       <div class="bg-grøn-300 p-md">
-        <h2 class="text-h2_desk font-khand text-center">HVER 2. UGE</h2>
-        <p class="text-p_mobil font-montserrat text-center text-grå-900">
+        <h2 class="text-h2_mobil md:text-h2_desk font-khand text-center">
+          HVER 2. UGE
+        </h2>
+        <p
+          class="text-p_lillemobil md:text-p_mobil font-montserrat text-center text-grå-900"
+        >
           Fra 340 DKK
         </p>
 
         <p
-          class="text-p_lilledesk font-montserrat text-center text-grå-900 py-xs"
+          class="text-p_mobil md:text-p_lilledesk font-montserrat text-center text-grå-900 py-xs"
         >
           Du vil modtage 2 poser (2 x 250 gr) kaffe ved hver forsendelse.
         </p>
 
         <p
-          class="text-p_lilledesk
+          class="text-p_mobil md:text-p_lilledesk
           font-montserrat
           text-center
           text-grå-900"
@@ -73,7 +89,9 @@ import Button from "../components/Button.astro";
           til hver en tid.
         </p>
 
-        <p class="text-p_mobil font-montserrat text-center text-grå-900 py-s">
+        <p
+          class="text-p_lillemobil md:text-p_mobil font-montserrat text-center text-grå-900 py-s"
+        >
           Vi forventer at afsende dit første abonnement: 12/12/2024
         </p>
 

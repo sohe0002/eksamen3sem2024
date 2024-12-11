@@ -5,27 +5,37 @@ import Button from "../components/Button.astro";
 
 <MainLayout title="Abonnement">
   <section class="px-xl">
-    <h1 class="font-khand text-h2_desk text-grå-900">ABONNEMENT</h1>
+    <h1 class="font-khand text-h2_mobil md:text-h2_desk text-grå-900">
+      ABONNEMENT
+    </h1>
     <hr class="w-full border-grå-900 border" />
     <div
-      class="breadcrumb flex justify-between font-montserrat text-p_lilledesk text-grå-900 pb-lg"
+      class="breadcrumb flex justify-between font-montserrat text-p_mobil md:text-p_lilledesk text-grå-900 pb-lg"
     >
-      <a href="/abonnement1" class="hover:underline">1. Vælg Kaffe</a>
+      <a href="/abonnement1" class="hidden md:block hover:underline"
+        >1. Vælg Kaffe</a
+      >
       <a href="/abonnement2" class="font-bold hover:underline"
         >2. Vælg Abonnement</a
       >
-      <a href="/abonnement3" class="hover:underline">3. Vælg Frekvensen</a>
-      <a href="/abonnement4" class="hover:underline">4. Føj til Kurven</a>
+      <a href="/abonnement3" class="hidden md:block hover:underline"
+        >3. Vælg Frekvensen</a
+      >
+      <a href="/abonnement4" class="hidden md:block hover:underline"
+        >4. Føj til Kurven</a
+      >
     </div>
   </section>
 
   <section class="px-xl pb-lg">
-    <div class="grid grid-cols-2 gap-8">
-      <div class="bg-grå-300 px-md py-md">
-        <h2 class="text-h2_desk font-khand text-center">VI OVERRASKER DIG</h2>
+    <div class="md:grid md:grid-cols-2 gap-8">
+      <div class="bg-grå-300 px-md py-md mb-md md:mb-0">
+        <h2 class="text-h2_mobil md:text-h2_desk font-khand text-center">
+          VI OVERRASKER DIG
+        </h2>
 
         <p
-          class="text-p_lilledesk font-montserrat text-center text-grå-900 py-s"
+          class="text-p_mobil md:text-p_lilledesk font-montserrat text-center text-grå-900 py-s"
         >
           To unikke kaffer af eksklusive mikrohøste hver måned. Dette inkluderer
           specialristninger og først til de nye høste fra farmerne.
@@ -37,10 +47,12 @@ import Button from "../components/Button.astro";
       </div>
 
       <div class="bg-grøn-300 p-md">
-        <h2 class="text-h2_desk font-khand text-center">DU VÆLGER SELV</h2>
+        <h2 class="text-h2_mobil md:text-h2_desk font-khand text-center">
+          DU VÆLGER SELV
+        </h2>
 
         <p
-          class="text-p_lilledesk font-montserrat text-center text-grå-900 py-s"
+          class="text-p_mobil md:text-p_lilledesk font-montserrat text-center text-grå-900 py-s"
         >
           Få dine favoritkaffer leveret lige til døren, så du aldrig løber tør.
           Vores kaffer er sæsonbestemte, så abonnementet vil løbe så længe
