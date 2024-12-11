@@ -1,81 +1,128 @@
 ---
 import Card_shop from "../components/Card_shop.astro";
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<article class="lg:mx-xl">
-  <section class="mt-xl">
-    <div class="flex">
-      <h2 class="text-h3_mobil lg:px-xs lg:text-h3_desk">Filter</h2>
-      <h2 class="text-h3_mobil lg:px-xs lg:text-h3_desk">Espresso</h2>
-    </div>
-    <hr class="w-full border border-black" />
-  </section>
-  <section class="my-xl bg-rød-400">
-    <h2 class="text-h3_desk">Filter</h2>
-    <div class="grid grid-cols-2 lg:grid-cols-3 justify-items-center">
-      <Card_shop
-        cardimage="bekele.avif"
-        cardimagealt="Bekele"
-        kaffenavn="Bekele"
-      />
-      <Card_shop cardimage="aga.avif" cardimagealt="Aga" kaffenavn="Aga" />
-      <Card_shop
-        cardimage="gichathaini.avif"
-        cardimagealt="Gichathaini"
-        kaffenavn="Gichathaini"
-      />
-      <Card_shop
-        cardimage="julekaffe.avif"
-        cardimagealt="julekaffe"
-        kaffenavn="Julekaffe Perez"
-      />
-      <Card_shop
-        cardimage="kieni.avif"
-        cardimagealt="kieni"
-        kaffenavn="Kieni"
-      />
-      <Card_shop
-        cardimage="silvia.avif"
-        cardimagealt="silvia"
-        kaffenavn="Silvia"
-      />
-      <Card_shop
-        cardimage="takesi.avif"
-        cardimagealt="takesi"
-        kaffenavn="Takesi Gesha"
-      />
-      <Card_shop
-        cardimage="vista.avif"
-        cardimagealt="vista"
-        kaffenavn="Vista Hermosa"
-      />
-    </div>
-  </section>
-  <section class="">
-    <h2 class="text-h3_desk">Filter</h2>
-    <div class="grid grid-cols-2 lg:grid-cols-3 justify-items-center">
-      <Card_shop
-        cardimage="aga_es.avif"
-        cardimagealt="aga espresso"
-        kaffenavn="Aga Espresso"
-      />
-      <Card_shop
-        cardimage="vista_es.avif"
-        cardimagealt="vista espresso"
-        kaffenavn="Vista Hermosa Espresso"
-      />
-      <Card_shop
-        cardimage="kieni_es.avif"
-        cardimagealt="kieni espresso"
-        kaffenavn="Kieni Espresso"
-      />
-      <Card_shop
-        cardimage="blend_es.avif"
-        cardimagealt="espresso blend"
-        kaffenavn="Espresso Blend"
-        <
-        section
-      />
-    </div>
-  </section>
-</article>
+<MainLayout>
+  <article class="">
+    <section class="py-xl lg:px-xl">
+      <div class="flex">
+        <a href="#filter-section" class="text-h3_mobil lg:px-xs lg:text-h3_desk"
+          >Filter</a
+        >
+        <a
+          href="#espresso-section"
+          class="text-h3_mobil lg:px-xs lg:text-h3_desk">Espresso</a
+        >
+      </div>
+      <hr class="w-full border border-black" />
+    </section>
+    <section id="filter-section" class="py-xl bg-grå-400 lg:px-xl">
+      <h2 class="text-h3_desk">Filter</h2>
+      <div class="grid grid-cols-2 lg:grid-cols-3 justify-items-center">
+        <Card_shop
+          cardimage="bekele.avif"
+          cardimagealt="Bekele"
+          kaffenavn="Bekele"
+          info="Anaerobic Natural"
+          smag="Sød og fyldig"
+          pris="159 DKK"
+        />
+
+        <Card_shop
+          cardimage="aga.avif"
+          cardimagealt="Aga"
+          kaffenavn="Aga"
+          info=" "
+          smag="Let og elegant med forfriskende syre"
+          pris="139 DKK"
+        />
+        <Card_shop
+          cardimage="gichathaini.avif"
+          cardimagealt="Gichathaini"
+          kaffenavn="Gichathaini"
+          info=""
+          smag="Frisk, sød og frugtig"
+          pris="151 DKK"
+        />
+        <Card_shop
+          cardimage="julekaffe.avif"
+          cardimagealt="julekaffe"
+          kaffenavn="Julekaffe Perez"
+          info="Økologisk"
+          smag="Ren og elegant med god sødme"
+          pris="139 DKK"
+        />
+        <Card_shop
+          cardimage="kieni.avif"
+          cardimagealt="kieni"
+          kaffenavn="Kieni"
+          info=""
+          smag="Sød og fyldig med aroma af solbær"
+          pris="142 DKK"
+        />
+        <Card_shop
+          cardimage="silvia.avif"
+          cardimagealt="silvia"
+          kaffenavn="Silvia"
+          info="Økologisk"
+          smag="Fyldig og sød"
+          pris="147 DKK"
+        />
+        <Card_shop
+          cardimage="takesi.avif"
+          cardimagealt="takesi"
+          kaffenavn="Takesi Gesha"
+          info="Max 10 poser pr. kunde"
+          smag="Elegant, fyldig og utrolig sød"
+          pris="300 DKK"
+        />
+        <Card_shop
+          cardimage="vista.avif"
+          cardimagealt="vista"
+          kaffenavn="Vista Hermosa"
+          info=""
+          smag="Frisk, sød og cremet"
+          pris="135 DKK"
+        />
+      </div>
+    </section>
+    <section id="espresso-section" class="py-xl bg-grøn-300 lg:px-xl">
+      <h2 class="text-h3_desk">Espresso</h2>
+      <div class="grid grid-cols-2 lg:grid-cols-3 justify-items-center">
+        <Card_shop
+          cardimage="aga_es.avif"
+          cardimagealt="aga espresso"
+          kaffenavn="Aga Espresso"
+          info="Økologisk"
+          smag="Ren og frisk espresso"
+          pris="139 DKK"
+        />
+        <Card_shop
+          cardimage="vista_es.avif"
+          cardimagealt="vista espresso"
+          kaffenavn="Vista Hermosa Espresso"
+          info=""
+          smag="Sød og ren espresso"
+          pris="135 DKK"
+        />
+        <Card_shop
+          cardimage="kieni_es.avif"
+          cardimagealt="kieni espresso"
+          kaffenavn="Kieni Espresso"
+          info=""
+          smag="Syrlig og olieret espresso"
+          pris="142 DKK"
+        />
+        <Card_shop
+          cardimage="blend_es.avif"
+          cardimagealt="espresso blend"
+          kaffenavn="Espresso Blend"
+          info="35% Jose + 35% Vista Hermosa + 30% Reshad"
+          smag="Fyldig, sød og cremet espresso"
+          pris="132 DKK"
+        />
+      </div>
+    </section>
+  </article>
+</MainLayout>
