@@ -3,6 +3,7 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
 
   theme: {
+  
     extend: {
       colors: {
         transparent: "transparent",
@@ -107,8 +108,8 @@ export default {
       },
 
       fontSize: {
-        p_desk: ["20px", { lineHeight: "1.75rem" }],
-        p_stordesk: ["24px", { lineHeight: "1.75rem" }],
+        p_desk: ["18px", { lineHeight: "1.75rem" }],
+        p_stordesk: ["20px", { lineHeight: "40px" }],
         p_lilledesk: ["16px", { lineHeight: "1.75rem" }],
         h4_desk: ["24px", { lineHeight: "2.25rem" }],
         h3_desk: ["31px", { lineHeight: "3rem" }],

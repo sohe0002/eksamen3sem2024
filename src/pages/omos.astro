@@ -1,0 +1,264 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
+import kaffebonner from "../assets/images/kaffebonner.webp";
+import besogpåfarm from "../assets/images/besogpåfarm.webp";
+import blade from "../assets/images/blade.webp";
+import risteri from "../assets/images/risteri.webp";
+import kaffelaves from "../assets/images/kaffelaves.webp";
+import farm from "../assets/images/farm.webp";
+---
+
+<MainLayout title="om_os">
+    <article>
+        <section>
+            <h3 class="text-h3_mobil md:text-h3_desk md:ml-40 ml-16 pb-2">
+                OM COFFEE COLLECTIVE
+            </h3>
+            <hr class="md:mx-40 border-grå-800 border" />
+            <div
+                class="md:grid md:grid-cols-3 md:mx-40 mx-16 md:my-24 md:gap-24 md:text-p_stordesk text-p_stormobil"
+            >
+                <p class="md:col-span-2">
+                    Hos Coffee Collective arbejder vi for at skabe en
+                    kaffeoplevelse, der gør en forskel – både for kaffebønderne
+                    og for vores kunder. Vi tror på, at kvalitetskaffe starter
+                    med respekt for de mennesker, der dyrker den, og vi handler
+                    derfor direkte med bønderne. Ved at betale en fair pris, der
+                    afspejler deres arbejde og ekspertise, bidrager vi til at
+                    skabe bedre forhold og muligheder i kaffens
+                    oprindelseslande.
+                </p>
+                <p>
+                    Samtidig stræber vi efter at gøre kaffens rejse fra bønne
+                    til kop gennemsigtig og bæredygtig. Vores mål er at bringe
+                    verdens bedste kaffeoplevelser til dig, mens vi inspirerer
+                    til bevidsthed omkring valg, der kan gøre en forskel – én
+                    kop ad gangen.
+                </p>
+            </div>
+            <div class="md:grid md:grid-cols-3 mx-16 md:mx-40 my-10 gap-24">
+                <Image
+                    src={kaffebonner}
+                    alt="billeder af friske kaffebønner"
+                    class="w-full h-[350px] object-cover"
+                />
+                <Image
+                    src={besogpåfarm}
+                    alt="billeder af et besøg på en af vores kaffefarme"
+                    class="w-full h-[350px] object-cover col-span-2"
+                />
+            </div>
+        </section>
+        <section>
+            <div
+                class="grid grid-cols-1 md:grid-cols-4 gap-8 md:mx-44 md:my-24 relative"
+            >
+                <!-- Lodret tekst -->
+                <div
+                    class="flex items-end md:col-span-1 hidden md:block relative"
+                >
+                    <div
+                        class="text-h1_desk uppercase -rotate-90 origin-bottom-left whitespace-nowrap absolute bottom-0 left-56 font-khand"
+                        style="transform-origin: bottom left; white-space: nowrap;"
+                    >
+                        Coffee Collective
+                    </div>
+                </div>
+
+                <!-- Sektioner -->
+                <div class="md:col-span-3 space-y-16">
+                    <!-- Sektion 1 -->
+                    <div class="grid md:grid-cols-3 gap-8 items-start">
+                        <div class="md:col-span-2 space-y-4">
+                            <h3 class="md:text-h3_desk uppercase font-khand">
+                                Vores Historie
+                            </h3>
+                            <p
+                                class="md:text-p_desk text-p_mobil font-montserrat"
+                            >
+                                Grundlagt i 2007 og 100% ejet og drevet af Peter
+                                N. Dupont, Casper Engel Rasmussen og Klaus
+                                Thomsen. Med adskillige præmier i bagagen,
+                                inklusivt guld i Barista Verdensmesterskabet og
+                                VM i Kaffesmagning, fortsætter The Coffee
+                                Collective med at udforske kaffens potentiale og
+                                muligheder.
+                            </p>
+                        </div>
+                        <Image
+                            src={blade}
+                            alt="billeder af friske kaffeplanter"
+                            class="w-full h-[250px] object-cover"
+                        />
+                    </div>
+
+                    <!-- Sektion 2 -->
+                    <div class="grid md:grid-cols-3 gap-8 items-start">
+                        <div class="md:col-span-2 space-y-4">
+                            <h3 class="md:text-h3_desk uppercase font-khand">
+                                Risteriet
+                            </h3>
+                            <p
+                                class="md:text-p_desk text-p_mobil font-montserrat"
+                            >
+                                Vi rister kaffe dagligt og sender direkte til
+                                engroskunder, vores egne kaffebarer, abonnenter
+                                og webshop kunder. Men friskristet kaffe er kun
+                                en lille del af ligningen.
+                            </p>
+                        </div>
+                        <Image
+                            src={risteri}
+                            alt="billeder af risteriet"
+                            class="w-full h-[250px] object-cover"
+                        />
+                    </div>
+
+                    <!-- Sektion 3 -->
+                    <div class="grid md:grid-cols-3 gap-8 items-start">
+                        <div class="md:col-span-2 space-y-4">
+                            <h3 class="md:text-h3_desk uppercase font-khand">
+                                Formål
+                            </h3>
+                            <p
+                                class="md:text-p_desk text-p_mobil font-montserrat"
+                            >
+                                Vores formål er at fremhæve kaffens fulde
+                                potentiale ved at handle direkte med kaffebønder
+                                og sikre en fair betaling, der understøtter
+                                bæredygtighed og høj kvalitet. Vi ønsker at gøre
+                                kaffens rejse gennemsigtig og inspirere til
+                                bevidste valg.
+                            </p>
+                        </div>
+                        <Image
+                            src={kaffelaves}
+                            alt="billeder af en kaffe der bliver lavet"
+                            class="w-full h-[250px] object-cover"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="md:py-36">
+            <Image
+                src={farm}
+                alt="billeder af friske kaffeplanter"
+                class="w-full h-[300px] object-cover"
+            />
+        </section>
+        <section class="my-24">
+            <h2
+                class="uppercase md:ml-44 ml-12 md:text-h2_desk text-h2_mobil font-khand"
+            >
+                teamet bag
+            </h2>
+            <hr class="border-grå-800 border" />
+            <h3
+                class="uppercase md:text-h3_desk text-h3_mobil font-khand text-center md:py-12 py-4"
+            >
+                Grundlæggerne
+            </h3>
+            <hr class="border-grå-800 border" />
+            <div
+                class="grid md:grid-cols-3 md:divide-x-2 sm:divide-y divide-grå-800 text-center"
+            >
+                <div class="px-20 py-12">
+                    <Image
+                        src={kaffelaves}
+                        alt="billeder af en kaffe der bliver lavet"
+                        class="w-full object-cover pb-4"
+                    />
+                    <h3
+                        class="uppercase md:text-h3_desk text-h3_mobil font-khand"
+                    >
+                        Klaus Thomsen
+                    </h3>
+                    <p
+                        class="uppercase text-p_mobil md:text-p_desk font-montserrat"
+                    >
+                        HEAD OF COFFEE SHOP QUALITY
+                    </p>
+                </div>
+                <div class="px-20 py-12">
+                    <Image
+                        src={kaffelaves}
+                        alt="billeder af en kaffe der bliver lavet"
+                        class="w-full object-cover pb-4"
+                    />
+                    <h3
+                        class="uppercase md:text-h3_desk text-h3_mobil font-khand"
+                    >
+                        casper engel rasmussen
+                    </h3>
+                    <p
+                        class="uppercase text-p_mobil md:text-p_desk font-montserrat"
+                    >
+                        RISTER QC
+                    </p>
+                </div>
+                <div class="px-20 py-12">
+                    <Image
+                        src={kaffelaves}
+                        alt="billeder af en kaffe der bliver lavet"
+                        class="w-full object-cover pb-4"
+                    />
+                    <h3
+                        class="uppercase md:text-h3_desk text-h3_mobil font-khand"
+                    >
+                        Peter n. dupont
+                    </h3>
+                    <p
+                        class="uppercase text-p_mobil md:text-p_desk font-montserrat"
+                    >
+                        HEAD OF SOURCING & SUSTAINABILITY
+                    </p>
+                </div>
+            </div>
+            <hr class="border-grå-800 border" />
+            <p
+                class="text-p_stormobil md:text-p_stordesk font-montserrat md:mx-96 md:my-24 m-12"
+            >
+                Coffee Collective blev stiftet af Peter N. Dupont, Klaus Thomsen
+                og Casper Engel Rasmussen, der deler en passion for kaffe og
+                bæredygtighed. Peter fokuserer på sourcing og bæredygtighed,
+                Klaus på kaffebarernes kvalitet, og Casper på at perfektionere
+                ristningen. Sammen stræber de efter at hæve standarden for
+                kaffeoplevelser.
+            </p>
+            <hr class="border-grå-800 border" />
+            <div
+                class="grid md:grid-cols-3 md:divide-x-2 divide-y divide-grå-800 text-center"
+            >
+                <div class="py-12">
+                    <h1 class="font-khand text-h1_mobil md:text-h1_desk">
+                        130
+                    </h1>
+                    <p class="text-p_mobil md:text-p_desk font-montserrat">
+                        Ansatte
+                    </p>
+                </div>
+                <div class="py-12">
+                    <h1 class="font-khand text-h1_mobil md:text-h1_desk">
+                        123
+                    </h1>
+                    <p class="text-p_mobil md:text-p_desk font-montserrat">
+                        Tons grøn kaffe købt i 2023
+                    </p>
+                </div>
+                <div class="py-12">
+                    <h1 class="font-khand text-h1_mobil md:text-h1_desk">
+                        40%
+                    </h1>
+                    <p class="text-p_mobil md:text-p_desk font-montserrat">
+                        Reduktion af co2-udledning pr. kop kaffe
+                    </p>
+                </div>
+            </div>
+            <hr class="border-grå-800 border" />
+        </section>
+    </article>
+</MainLayout>
