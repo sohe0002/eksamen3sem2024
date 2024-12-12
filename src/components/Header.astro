@@ -5,7 +5,7 @@ import Link from "../components/Link.astro";
 <div x-data="{ showmenu: false }" class="p-4 relative z-30 h-full font-khand">
   <div
     id="navbar"
-    class="flex flex-row justify-between py-5 px-2 items-center text-h4_desk md:mx-36"
+    class="flex flex-row justify-between py-s px-2 items-center text-h4_desk md:mx-xl"
   >
     <!-- Grid Menu -->
     <ul
@@ -55,7 +55,7 @@ import Link from "../components/Link.astro";
       <!-- Mobile menu -->
       <nav
         id="mobilmenu"
-        class="fixed inset-0 flex flex-col bg-white z-200 pt-32"
+        class="fixed inset-0 flex flex-col bg-brun-50 z-200 pt-32"
         x-show="showmenu"
         x-transition
         x-on:click="showmenu = false"
@@ -68,7 +68,7 @@ import Link from "../components/Link.astro";
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="2"
-            stroke="blå-800"
+            stroke="#304878"
             class="w-9 h-9"
           >
             <path
@@ -96,7 +96,7 @@ import Link from "../components/Link.astro";
       <!-- Burger -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        fill="blå-800"
+        fill="#304878"
         viewBox="0 0 20 20"
         class="w-8 h-9"
         x-show="!showmenu"
