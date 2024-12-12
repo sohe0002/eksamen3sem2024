@@ -4,38 +4,45 @@ import BorderButton from "../components/Button.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import Bekele from "../assets/images/bekele_single.webp";
 import { Image } from "astro:assets";
+import farmer4 from "../assets/images/farmer4.webp";
+import bekeleslide1 from "../assets/images/bekeleslide1.webp";
+import bekeleslide2 from "../assets/images/bekeleslide2.webp";
+import bekeleslide3 from "../assets/images/bekeleslide3.webp";
+import kaffeguide from "../assets/images/kaffeguide.webp";
+import kieni_es from "../assets/images/kieni_es.webp";
+import silvia from "../assets/images/silvia.webp";
 ---
 
 <MainLayout>
   <article class="bg-brun-50">
     <section class="grid lg:grid-cols-2">
-      <div class="mx-md">
-        <div class="lg:flex">
+      <div class="">
+        <div class="lg:flex relative">
           <h1
-            class="font-montserrat text-h1_mobil text-center lg:text-h1_desk text-grå-900"
+            class="font-montserrat text-h1_mobil text-center lg:text-h1_desk text-grå-900 mx-md"
           >
             BEKELE
           </h1>
-          <hr class="border-rød-400 border-2 lg:hidden" />
+          <hr class="border-rød-400 border-2 lg:hidden relative my-lg z-0" />
           <Image
             src={Bekele}
             alt="billede af bekele kaffen"
-            class="w-auto h-[350px] grid mx-auto lg:hidden"
+            class="w-auto h-[350px] grid mx-auto lg:hidden mx-md -mt-[175px] relative z-10"
           />
           <h2
-            class="font-montserrat lg:text-p_desk text-grå-900 grid content-end"
+            class="font-montserrat lg:text-p_desk text-grå-900 grid content-end mx-md"
           >
             Sidama, Ethiopia
           </h2>
         </div>
         <hr class="border-rød-400 border-2 hidden lg:block" />
-        <p class="text-p_stormobil font-bold font-montserrat">
+        <p class="text-p_stormobil font-bold font-montserrat mx-md">
           Sød, frisk og fyldig.
         </p>
-        <p class="text-p_stormobil font-bold font-montserrat">
+        <p class="text-p_stormobil font-bold font-montserrat mx-md">
           Aroma af jordbærslik, ananas og papaya
         </p>
-        <div class="grid grid-cols-2 py-s">
+        <div class="grid grid-cols-2 py-s mx-md">
           <div class="font-montserrat text-p_mobil text-rød-500">
             <p>PRODUCERET SAMMEN MED</p>
             <p>KVALITETSBONUS</p>
@@ -55,9 +62,13 @@ import { Image } from "astro:assets";
             <p>Natural</p>
           </div>
         </div>
-        <p class="font-montserrat text-h2_mobil text-rød-900 pt-xxs">134 DKK</p>
-        <p class="font-montserrat text-p_mobil text-rød-700 pb-s">250 G</p>
-        <div class="flex gap-s text-h4_mobil">
+        <p class="font-montserrat text-h2_mobil text-rød-900 pt-xxs mx-md">
+          134 DKK
+        </p>
+        <p class="font-montserrat text-p_mobil text-rød-700 pb-s mx-md">
+          250 G
+        </p>
+        <div class="flex gap-s text-h4_mobil mx-md">
           <Button>KØB</Button>
           <BorderButton>ABONNER</BorderButton>
         </div>
@@ -71,12 +82,12 @@ import { Image } from "astro:assets";
         />
       </div>
     </section>
-    <section class="mx-md">
-      <div>
+    <section>
+      <div class="mx-md">
         <h2 class="font-montserrat text-h2_mobil text-rød-900 pt-s pb-xxs">
           KAFFEFARMEN
         </h2>
-        <p class="font-montserrat text-p_mobil text-grå-900">
+        <p class="font-montserrat text-p_mobil text-grå-900 mb-md">
           Bekele Karchara driver flere små forarbejdningssteder af kaffe i det
           samme område. Det sted, vi arbejder med, er det højeste, hvor de
           dyrker og forarbejder kaffe i 2.350 meters højde i Murago-området i
@@ -93,19 +104,75 @@ import { Image } from "astro:assets";
       </div>
       <div>
         <Image
-          src={Bekele}
-          alt="billede af bekele kaffen"
-          class="w-full h-[350px] lg:block"
+          src={farmer4}
+          alt="billede af en farmer"
+          class="w-full h-[550px] object-cover"
         />
       </div>
     </section>
-    <section class="bg-grøn-400 py-md">
-      <div>
-        <Image
-          src={Bekele}
-          alt="billede af bekele kaffen"
-          class="w-full h-[350px] lg:block"
-        />
+    <section class="">
+      <div
+        class="relative w-full max-w-2xl mx-auto overflow-hidden bg-grøn-400 py-xl"
+      >
+        <!-- Slider Container -->
+        <div id="slider" class="flex transition-transform duration-500">
+          <!-- Slide 1 -->
+          <div class="relative w-full flex-shrink-0 pl-lg">
+            <Image
+              src={bekeleslide1}
+              alt="Bønnerne bliver tørret på høje tørreborde"
+              class="w-full h-80 object-cover"
+            />
+
+            <p
+              class="absolute bottom-4 left-4 text-brun-50 font-montserrat text-h2_mobile font-bold text-lg px-4 py-2 w-96 pl-lg"
+            >
+              Bønnerne bliver tørret på høje tørreborde
+            </p>
+          </div>
+          <!-- Slide 2 -->
+          <div class="relative w-full flex-shrink-0 pl-lg">
+            <Image
+              src={bekeleslide2}
+              alt="Bønnerne bliver tørret på høje tørreborde"
+              class="w-full h-80 object-cover"
+            />
+
+            <p
+              class="absolute bottom-4 left-4 text-brun-50 font-montserrat text-h2_mobile font-bold text-lg px-4 py-2 w-96 pl-lg"
+            >
+              Bekele Karchara viser os rundt på farmen
+            </p>
+          </div>
+          <!-- Slide 3 -->
+          <div class="relative w-full flex-shrink-0 pl-lg">
+            <Image
+              src={bekeleslide3}
+              alt="Bønnerne bliver tørret på høje tørreborde"
+              class="w-full h-80 object-cover"
+            />
+
+            <p
+              class="absolute bottom-4 left-4 text-brun-50 font-montserrat text-h2_mobile font-bold text-lg px-4 py-2 w-96 pl-lg"
+            >
+              Flere tørreborde, hvor der bliver sorteret bønner
+            </p>
+          </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <button
+          id="prev"
+          class="absolute top-96 right-20 transform -translate-y-1/2 bg-white p-2 px-4 rounded-full shadow-md bg-brun-50 text-rød-700"
+        >
+          &#x3c; <!-- Left arrow -->
+        </button>
+        <button
+          id="next"
+          class="absolute top-96 right-2 transform -translate-y-1/2 bg-white p-2 px-4 rounded-full shadow-md bg-brun-50 text-rød-700 mr-xxs"
+        >
+          &#x3e; <!-- Right arrow -->
+        </button>
       </div>
     </section>
     <section class="bg-grå-300 py-md">
@@ -120,34 +187,38 @@ import { Image } from "astro:assets";
             baristaer. Find din foretrukne bryggemetode og lad os hjælpe dig med
             at få mest ud af dit udstyr.
           </p>
-          <Button>UDFORSK VORES GUIDES</Button>
+          <div class="pb-xxs">
+            <Button>UDFORSK VORES GUIDES</Button>
+          </div>
         </div>
-        <div>
+        <div class="py-s">
           <Image
-            src={Bekele}
-            alt="billede af bekele kaffen"
-            class="w-full h-[350px] lg:block"
+            src={kaffeguide}
+            alt="billede af kaffe"
+            class="w-auto h-[350px] object-cover"
           />
         </div>
       </div>
     </section>
     <section class="bg-rød-300">
       <div class="mx-md py-md">
-        <h2>MÅSKE NOGET FOR DIG?</h2>
-        <div class="grid grid-cols-2">
+        <h2 class="font-montserrat text-h3_mobil text-grå-90l font">
+          MÅSKE NOGET FOR DIG?
+        </h2>
+        <div class="grid grid-cols-2 py-s gap-md">
           <div>
             <Image
-              src={Bekele}
+              src={kieni_es}
               alt="billede af bekele kaffen"
-              class="w-full h-[350px] lg:block"
+              class="w-auto h-[300px] object-cover lg:block"
             />
             <p class="text-center">Kieni</p>
           </div>
           <div>
             <Image
-              src={Bekele}
+              src={silvia}
               alt="billede af bekele kaffen"
-              class="w-full h-[350px] lg:block"
+              class="w-auto h-[300px] object-cover lg:block"
             />
             <p class="text-center">Silvia</p>
           </div>
@@ -155,4 +226,32 @@ import { Image } from "astro:assets";
       </div>
     </section>
   </article>
+  <script>
+    const slider = document.getElementById("slider");
+    const prevButton = document.getElementById("prev");
+    const nextButton = document.getElementById("next");
+
+    let currentIndex = 0;
+
+    // Function to update slider position
+    function updateSlider() {
+      const width = slider.children[0].offsetWidth; // Bredden af et slide
+      slider.style.transform = `translateX(-${currentIndex * width}px)`;
+    }
+
+    // Event listeners for navigation buttons
+    prevButton.addEventListener("click", () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateSlider();
+      }
+    });
+
+    nextButton.addEventListener("click", () => {
+      if (currentIndex < slider.children.length - 1) {
+        currentIndex++;
+        updateSlider();
+      }
+    });
+  </script>
 </MainLayout>
