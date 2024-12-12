@@ -2,12 +2,12 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
 import { Image } from "astro:assets";
-import filtergruppe from "../assets/images/filtergruppe.png";
-import espressogruppe from "../assets/images/espressogruppe.png";
+import filterkaffe from "../assets/images/filterkaffe.webp";
+import espressokaffe from "../assets/images/espressokaffe.webp";
 ---
 
 <MainLayout title="Abonnement">
-  <section class="px-xl">
+  <section class="px-md md:px-xl">
     <h1 class="font-khand text-h2_mobil md:text-h2_desk text-grå-900">
       ABONNEMENT
     </h1>
@@ -28,14 +28,14 @@ import espressogruppe from "../assets/images/espressogruppe.png";
     </div>
   </section>
 
-  <section class="px-xl pb-lg">
+  <section class="px-md md:px-xl pb-lg">
     <div class="md:grid md:grid-cols-2 gap-8">
       <div class="bg-grå-300 px-md py-md mb-md md:mb-0">
         <h2 class="text-h2_mobil md:text-h2_desk font-khand text-center">
           FILTER
         </h2>
         <Image
-          src={filtergruppe}
+          src={filterkaffe}
           alt="billeder af 3 filter kaffeposer"
           class="mx-auto"
         />
@@ -48,7 +48,7 @@ import espressogruppe from "../assets/images/espressogruppe.png";
         </p>
 
         <a class="grid justify-items-center" href="/abonnement2"
-          ><Button>FIND ABONNEMENT</Button></a
+          ><Button>VÆLG</Button></a
         >
       </div>
 
@@ -57,7 +57,7 @@ import espressogruppe from "../assets/images/espressogruppe.png";
           ESPRESSO
         </h2>
         <Image
-          src={espressogruppe}
+          src={espressokaffe}
           alt="billeder af 3 espresso kaffeposer"
           class="mx-auto"
         />
@@ -68,7 +68,7 @@ import espressogruppe from "../assets/images/espressogruppe.png";
         </p>
 
         <a class="grid justify-items-center" href="/abonnement2"
-          ><Button>FIND ABONNEMENT</Button></a
+          ><Button>VÆLG</Button></a
         >
       </div>
     </div>

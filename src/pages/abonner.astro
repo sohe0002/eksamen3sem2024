@@ -2,11 +2,11 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
 import { Image } from "astro:assets";
-import kaffeabonnement from "../assets/images/kaffeabonnement.png";
+import kaffer from "../assets/images/kaffer.webp";
 ---
 
 <MainLayout title="Abonner">
-  <article class="px-xl pt-s pb-xl">
+  <article class="px-md md:px-xl pt-s pb-xl">
     <h1 class="font-khand text-grå-900 text-h2_mobil md:text-h2_desk">
       KVALITETSKAFFE DIREKTE TIL DØREN
     </h1>
@@ -55,7 +55,7 @@ import kaffeabonnement from "../assets/images/kaffeabonnement.png";
           <a href="/abonnement1"><Button>FIND ABONNEMENT</Button></a>
         </div>
       </div>
-      <Image src={kaffeabonnement} alt="billeder af 4 kaffeposer" />
+      <Image src={kaffer} alt="billeder af 4 kaffeposer" />
     </div>
   </article>
 </MainLayout>
