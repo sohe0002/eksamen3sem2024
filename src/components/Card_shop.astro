@@ -21,8 +21,14 @@ const {
       alt={cardimagealt}
       class="h-[400px] w-full object-contain"
     />
-    <p class="lg:text-p_stordesk text-brun-900 lg:mt-4 lg:pb-6">{kaffenavn}</p>
-    <p class="lg:hidden text-p_lilledesk text-brun-900 mt-4 pb-6">{pris}"</p>
+    <p class="font-montserrat lg:text-p_stordesk text-brun-900 lg:mt-4 lg:pb-6">
+      {kaffenavn}
+    </p>
+    <p
+      class="font-montserrat lg:hidden text-p_lilledesk text-brun-900 mt-4 pb-6"
+    >
+      {pris}"
+    </p>
     <!-- Overlay -->
     <div
       class="hidden lg:block absolute inset-0 bg-grøn-600 text-white opacity-0 group-hover:opacity-80 transition-opacity text-start px-s"
@@ -31,9 +37,9 @@ const {
       <p class="font-montserrat lg:text-p_lilledesk">{smag}</p>
       <p class="font-montserrat lg:text-p_stordesk pt-s">{pris}</p>
       <div class="flex justify-between pt-s">
-        <div class="">
+        <a href="/singleview">
           <BorderButton>UDFORSK</BorderButton>
-        </div>
+        </a>
         <LysButton>KØB</LysButton>
       </div>
     </div>

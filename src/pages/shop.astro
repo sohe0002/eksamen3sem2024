@@ -36,6 +36,7 @@ import MainLayout from "../layouts/MainLayout.astro";
           info="Anaerobic Natural"
           smag="Sød og fyldig"
           pris="159 DKK"
+          onclick="navigateToProduct('Bekele', 'Anaerobic Natural', 'Sød og fyldig', '159 DKK', 'bekele.avif')"
         />
 
         <Card_shop
@@ -140,4 +141,16 @@ import MainLayout from "../layouts/MainLayout.astro";
       </div>
     </section>
   </article>
+
+  <script>
+    function navigateToProduct(name, info, smag, pris, image) {
+      const url = new URL("/singleview", window.location.origin); // Ret filsti
+      url.searchParams.set("name", name);
+      url.searchParams.set("info", info);
+      url.searchParams.set("smag", smag);
+      url.searchParams.set("pris", pris);
+      url.searchParams.set("image", image);
+      window.location.href = url.toString();
+    }
+  </script>
 </MainLayout>
