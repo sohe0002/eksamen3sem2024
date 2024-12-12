@@ -77,6 +77,8 @@ export default {
           900: "#332D24",
           950: "#1A1814",
         },
+
+        hvid: '#ffffff',
       },
 
       spacing: {
