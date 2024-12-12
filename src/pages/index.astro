@@ -6,6 +6,15 @@ import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
 import forside from "../assets/images/forside.webp";
 import kaffer from "../assets/images/kaffer.webp";
+import LysBorderButton from "../components/LysBorderButton.astro";
+import LysButton from "../components/LysButton.astro";
+import kaffeflyver from "../assets/images/kaffeflyver.webp";
+import steps from "../assets/images/steps.png";
+import ansatte from "../assets/images/ansatte.webp";
+import farm from "../assets/images/farm.webp";
+import farmer2 from "../assets/images/farmer2.webp";
+import farmer3 from "../assets/images/farmer3.webp";
+import farmer4 from "../assets/images/farmer4.webp";
 ---
 
 <MainLayout title="FORSIDE">
@@ -22,35 +31,285 @@ import kaffer from "../assets/images/kaffer.webp";
 				COFFEE COLLECTIVE
 			</h1>
 		</section>
-		<section class="bg-grøn-500 md:p-xl">
-			<div>
-				<h4
-					class="uppercase font-khand text-h4_mobil md:text-h4_desk text-brun-50"
-				>
-					Kaffe
-				</h4>
-				<h2
-					class="uppercase font-khand text-h2_mobil md:text-h2_desk text-brun-50 font-bold"
-				>
-					Bryg din yndlingskaffe derhjemme
-				</h2>
-				<hr class="border-grå-50 border" />
+		<section
+			class="bg-grøn-500 md:py-xl md:px-2xl reletive px-md pt-md pb-s"
+		>
+			<h4
+				class="uppercase font-khand text-h4_mobil md:text-h4_desk text-brun-50"
+			>
+				Kaffe
+			</h4>
+			<h2
+				class="uppercase font-khand text-h2_mobil md:text-h2_desk text-brun-50 font-bold"
+			>
+				Bryg din yndlingskaffe derhjemme
+			</h2>
+			<hr class="border-grå-50 border" />
 
-				<p
-					class="font-montserrat text-brun-50 text-p_mobil md:text-p_desk py-s"
-				>
-					Perfekt til dig, der værdsætter en ren og balanceret kop
-					kaffe, hvor hver nuance får lov at træde frem. <br /> Find
-					din favorit blandt vores sortiment og oplev din kaffe på et
-					helt nyt niveau.
-				</p>
+			<div
+				class="md:grid md:grid-cols-2 mb-5xl font-montserrat text-brun-50 text-p_mobil md:text-p_desk"
+			>
+				<div>
+					<p class="py-s">
+						Perfekt til dig, der værdsætter en ren og balanceret kop
+						kaffe, hvor hver nuance får lov at træde frem. <br />
+					</p>
+					<p>
+						Find din favorit blandt vores sortiment og oplev din
+						kaffe på et helt nyt niveau.
+					</p>
+					<div class="grid-cols-2 grid py-s">
+						<LysBorderButton>UDFORSK VORES KAFFE</LysBorderButton>
+						<LysButton>ABONNER</LysButton>
+					</div>
+				</div>
+				<div>
+					<Image
+						src={kaffer}
+						alt="billeder af friske kaffebønner"
+						class="md:w-1/2 md:w-1/2 md:top-[990px] md:right-[100px] md:absolute md:object-cover md:z-20"
+					/>
+				</div>
 			</div>
-			<div>
+		</section>
+		<section
+			class="bg-rød-500 md:py-xl md:px-2xl reletive z-10 px-md pt-md"
+		>
+			<h4
+				class="uppercase font-khand text-h4_mobil md:text-h4_desk text-brun-50"
+			>
+				Abonnement
+			</h4>
+			<h2
+				class="uppercase font-khand text-h2_mobil md:text-h2_desk text-brun-50 font-bold"
+			>
+				Få lækker kaffe leveret lige til døren
+			</h2>
+			<hr class="border-grå-50 border" />
+
+			<div
+				class="md:grid md:grid-cols-2 mb-5xl font-montserrat text-brun-50 text-p_mobil md:text-p_desk"
+			>
+				<div>
+					<div class="grid-cols-2 grid py-s">
+						<LysBorderButton>UDFORSK VORES KAFFE</LysBorderButton>
+						<LysButton>ABONNER</LysButton>
+					</div>
+				</div>
+				<div>
+					<Image
+						src={kaffeflyver}
+						alt="billeder af friske kaffebønner"
+						class="md:w-1/2 md:w-1/2 md:top-[1830px] md:right-[100px] md:absolute md:object-cover md:z-20"
+					/>
+				</div>
+			</div>
+		</section>
+		<section
+			class="grid justify-items-center md:py-md mx-md mb-xl md:mb-2xl"
+		>
+			<Image src={steps} alt="billeder af friske kaffebønner" />
+		</section>
+		<section class="bg-blå-50 md:py-xl md:px-2xl px-md py-s">
+			<h4
+				class="uppercase font-khand text-h4_mobil md:text-h4_desk text-blå-500"
+			>
+				Coffee collective
+			</h4>
+			<h2
+				class="uppercase font-khand text-h2_mobil md:text-h2_desk text-blå-500 font-bold"
+			>
+				HVEM ER COFFEE COLLECTIVE
+			</h2>
+			<hr class="border-blå-500 border" />
+			<div
+				class="md:grid md:grid-cols-2 gap-20 font-montserrat text-blå-500 text-p_mobil md:text-p_desk"
+			>
+				<div>
+					<p class="py-s">
+						Hos Coffee Collective leverer vi kaffe af højeste
+						kvalitet med fokus på bæredygtighed og etisk handel. Vi
+						samarbejder direkte med kaffefarmere for at sikre både
+						enestående smag og arbejdsbetingelser.
+					</p>
+					<p>
+						Hver dag rister vi kaffen frisk for at bevare dens
+						unikke smagsnuancer. Gennem gennemsigtighed i processen
+						– fra bønne til kop – inviterer vi dig til at opleve
+						nordisk kaffekultur på et nyt niveau.
+					</p>
+					<div class="grid-cols-2 grid py-s">
+						<LysButton>LÆS MERE</LysButton>
+					</div>
+				</div>
+				<div>
+					<Image
+						src={ansatte}
+						alt="billeder af friske kaffebønner"
+						class="py-s h-4/5 object-cover"
+					/>
+				</div>
+			</div>
+		</section>
+		<section class="bg-grøn-200 md:py-xl md:px-2xl px-md py-s reletive">
+			<h4
+				class="uppercase font-khand text-h4_mobil md:text-h4_desk text-grå-900"
+			>
+				BÆREDYGTIGHED
+			</h4>
+			<h2 class="uppercase text-h2_mobil md:text-h2_desk font-khand">
+				Fra bønne til kop: En bæredygtig rejse
+			</h2>
+
+			<hr class="border-grå-900 border" />
+
+			<div
+				class="md:grid md:grid-cols-2 font-montserrat text-grå-900 text-p_mobil md:text-p_desk"
+			>
 				<Image
-					src={kaffer}
-					alt="billeder af friske kaffebønner"
-					class="w-full h-[800px] object-cover z-10"
+					src={farm}
+					alt="billeder af kvinde der plukker bønner fra kaffeplanter"
+					class="h-[600px] w-[500px] object-cover mt-s"
 				/>
+				<div>
+					<p class="mt-s">
+						Hos Coffee Collective skaber vi kaffeoplevelser i
+						verdensklasse med fokus på bæredygtighed og direkte
+						handel. Som B Corp-certificeret prioriterer vi sociale
+						og miljømæssige forbedringer, rister frisk kaffe dagligt
+						og gør en positiv forskel – fra bønne til kop.
+					</p>
+
+					<div class="grid-cols-2 grid py-s">
+						<LysBorderButton>LÆS MERE</LysBorderButton>
+					</div>
+					<div class="grid md:grid-cols-3 gap-10 pt-md">
+						<Image
+							src={farmer4}
+							alt="billeder af friske kaffebønner"
+							class="md:object-cover md:z-20"
+						/>
+						<Image
+							src={farmer3}
+							alt="billeder af friske kaffebønner"
+							class="h-full md:object-cover md:z-20"
+						/>
+						<Image
+							src={farmer2}
+							alt="billeder af friske kaffebønner"
+							class="h-full md:object-cover md:z-20"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="md:m-xl text-blå-600">
+			<div class="grid md:grid-cols-3 gap-40">
+				<div class="md:col-span-2">
+					<h2
+						class="uppercase text-h2_mobil md:text-h2_desk font-khand font-bold"
+					>
+						NYHEDSBREV
+					</h2>
+					<p
+						class="font-montserrat text-blå-600 text-p_mobil md:text-p_desk pt-xs pr-5xl"
+					>
+						Få de seneste kaffelanceringer før alle andre og kom
+						tættere på farmerne med unikke fortællinger fra deres
+						hverdag.
+					</p>
+					<div class="">
+						<form class="py-md grid grid-cols-2 gap-20">
+							<!-- Email input -->
+							<div>
+								<label
+									for="email"
+									class="block text-sm font-montserrat font-medium text-gray-900"
+								></label>
+								<input
+									type="email"
+									id="email"
+									class="w-full p-4 bg-grå-400 text-gray-900 font-montserrat outline-none border-none focus:outline-none focus:border-none focus:ring-0"
+									placeholder="E-mail"
+								/>
+							</div>
+
+							<!-- Password input -->
+							<div>
+								<label
+									for="password"
+									class="block text-sm font-montserrat font-medium text-blå-50"
+								></label>
+								<input
+									type="password"
+									id="password"
+									class="w-fit p-4 bg-blå-600 font-montserrat text-blå-50 outline-none border-none focus:outline-none focus:border-none focus:ring-0"
+									placeholder="Password"
+								/>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div>
+					<svg
+						width="253"
+						height="293"
+						viewBox="0 0 253 293"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<rect
+							x="253"
+							y="144.603"
+							width="66.9059"
+							height="41.7999"
+							transform="rotate(90 253 144.603)"
+							fill="#4060A0"></rect>
+						<ellipse
+							cx="31.8268"
+							cy="25.2998"
+							rx="31.8268"
+							ry="25.2998"
+							transform="matrix(0.0184303 0.99983 -0.999843 0.0177378 240.835 145.831)"
+							fill="#FCFAF7"></ellipse>
+						<rect
+							x="0.000488281"
+							y="124.1"
+							width="216.7"
+							height="97.1215"
+							fill="#4060A0"></rect>
+						<ellipse
+							cx="109.458"
+							cy="204.497"
+							rx="97.6606"
+							ry="79.9637"
+							fill="#FCFAF7"></ellipse>
+						<rect
+							x="63.8003"
+							y="221.221"
+							width="87.9998"
+							height="70.1433"
+							fill="#4060A0"></rect>
+						<path
+							d="M97.005 221.539L64.3499 290.467L-8.1104e-05 220.675L97.005 221.539Z"
+							fill="#4060A0"></path>
+						<path
+							d="M121.001 221.221L150.756 291.481L216.7 221.221L121.001 221.221Z"
+							fill="#4060A0"></path>
+						<path
+							d="M79.2002 0C91.9579 0 102.3 10.3422 102.3 23.1V28.6982C102.3 41.4559 91.9579 51.7981 79.2002 51.7981V0Z"
+							fill="#4060A0"></path>
+						<path
+							d="M128.7 0C141.458 0 151.8 10.3422 151.8 23.1V28.6982C151.8 41.4559 141.458 51.7981 128.7 51.7981V0Z"
+							fill="#4060A0"></path>
+						<path
+							d="M79.2002 51.7981C66.4424 51.7981 56.1002 62.1403 56.1002 74.8981V80.4963C56.1002 93.254 66.4424 103.596 79.2002 103.596V51.7981Z"
+							fill="#4060A0"></path>
+						<path
+							d="M128.7 51.7981C115.942 51.7981 105.6 62.1403 105.6 74.8981V80.4963C105.6 93.254 115.942 103.596 128.7 103.596V51.7981Z"
+							fill="#4060A0"></path>
+					</svg>
+				</div>
 			</div>
 		</section>
 	</article>

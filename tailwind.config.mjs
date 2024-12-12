@@ -88,6 +88,9 @@ export default {
         xl: "110px",
         "2xl": "140px",
         "3xl": "180px",
+        "4xl": "200px",
+        "5xl": "300px",
+
       },
 
       fontFamily: {
