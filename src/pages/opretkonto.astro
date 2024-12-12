@@ -5,14 +5,14 @@ import LysBorderButton from "../components/LysBorderButton.astro";
 ---
 
 <MainLayout title="Abonnement">
-  <section class="px-xl pb-md">
+  <section class="px-md md:px-xl pb-md">
     <h1 class="font-khand text-h2_mobil md:text-h2_desk text-grå-900">
       DIN KONTO
     </h1>
     <hr class="w-full border-grå-900 border" />
 
     <div class="md:grid md:grid-cols-2 pt-s pb-lg gap-12">
-      <section class="bg-grå-800 px-xl pt-xl mb-s md:mb-0">
+      <section class="bg-grå-800 px-s md:px-xl pt-xl mb-s md:mb-0 pb-lg">
         <p
           class="font-montserrat text-brun-50 text-p_stormobil md:text-p_stordesk text-center pb-md"
         >
@@ -40,7 +40,7 @@ import LysBorderButton from "../components/LysBorderButton.astro";
               <input
                 type="email"
                 id="email"
-                class="w-full p-4 bg-grå-400 text-gray-900 font-montserrat"
+                class="w-full p-4 bg-grå-400 text-gray-900 font-montserrat outline-none border-none focus:outline-none focus:border-none focus:ring-0"
                 placeholder="E-mail"
               />
             </div>
@@ -54,7 +54,7 @@ import LysBorderButton from "../components/LysBorderButton.astro";
               <input
                 type="password"
                 id="password"
-                class="w-full p-4 bg-grå-400 font-montserrat text-gray-900"
+                class="w-full p-4 bg-grå-400 font-montserrat text-gray-900 outline-none border-none focus:outline-none focus:border-none focus:ring-0"
                 placeholder="Password"
               />
             </div>
@@ -62,13 +62,13 @@ import LysBorderButton from "../components/LysBorderButton.astro";
             <!-- Gentag password input -->
             <div>
               <label
-                for="password"
+                for="password-confirm"
                 class="block text-sm font-montserrat font-medium text-gray-900"
               ></label>
               <input
                 type="password"
-                id="password"
-                class="w-full p-4 bg-grå-400 font-montserrat text-gray-900"
+                id="password-confirm"
+                class="w-full p-4 bg-grå-400 font-montserrat text-gray-900 outline-none border-none focus:outline-none focus:border-none focus:ring-0"
                 placeholder="Bekræft password"
               />
             </div>
@@ -79,5 +79,5 @@ import LysBorderButton from "../components/LysBorderButton.astro";
         </div>
       </section>
     </div>
-  </section>
-</MainLayout>
+  </section></MainLayout
+>

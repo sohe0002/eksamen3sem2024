@@ -5,7 +5,7 @@ import LysBorderButton from "../components/LysBorderButton.astro";
 ---
 
 <MainLayout title="Abonnement">
-  <section class="px-xl pb-md">
+  <section class="px-md md:px-xl pb-md">
     <h1 class="font-khand text-h2_mobil md:text-h2_desk text-grå-900">
       DIN KONTO
     </h1>
@@ -28,7 +28,7 @@ import LysBorderButton from "../components/LysBorderButton.astro";
               <input
                 type="email"
                 id="email"
-                class="w-full p-4 bg-grå-400 text-gray-900 font-montserrat"
+                class="w-full p-4 bg-grå-400 text-gray-900 font-montserrat outline-none border-none focus:outline-none focus:border-none focus:ring-0"
                 placeholder="E-mail"
               />
             </div>
@@ -42,18 +42,21 @@ import LysBorderButton from "../components/LysBorderButton.astro";
               <input
                 type="password"
                 id="password"
-                class="w-full p-4 bg-grå-400 font-montserrat text-gray-900"
+                class="w-full p-4 bg-grå-400 font-montserrat text-gray-900 outline-none border-none focus:outline-none focus:border-none focus:ring-0"
                 placeholder="Password"
               />
             </div>
           </form>
-          <a class="grid justify-items-center pb-lg pt-s" href="/logind"
-            ><Button>LOG IND</Button></a
-          >
+
+          <div class="flex justify-center pt-s pb-lg">
+            <a href="/logind">
+              <Button>LOG IND</Button>
+            </a>
+          </div>
         </div>
       </section>
 
-      <section class="bg-grå-800 px-xl pt-xl pb-lg">
+      <section class="bg-grå-800 px-s md:px-xl pt-xl pb-lg">
         <p
           class="font-montserrat text-brun-50 text-p_stormobil md:text-p_stordesk text-center pb-md"
         >
