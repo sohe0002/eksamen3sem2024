@@ -5,6 +5,7 @@ import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
 import forside from "../assets/images/forside.webp";
+import kaffer from "../assets/images/kaffer.webp";
 ---
 
 <MainLayout title="FORSIDE">
@@ -13,9 +14,44 @@ import forside from "../assets/images/forside.webp";
 			<Image
 				src={forside}
 				alt="billeder af friske kaffebønner"
-				class="w-full h-[800px] object-cover absolute z-10"
+				class="w-full h-[800px] object-cover z-10"
 			/>
-			<h1>COFFEE COLLECTIVE</h1>
+			<h1
+				class="font-khand text-h1_mobil md:text-[240px] text-grå-50 absolute z-30 top-[800px]"
+			>
+				COFFEE COLLECTIVE
+			</h1>
+		</section>
+		<section class="bg-grøn-500 md:p-xl">
+			<div>
+				<h4
+					class="uppercase font-khand text-h4_mobil md:text-h4_desk text-brun-50"
+				>
+					Kaffe
+				</h4>
+				<h2
+					class="uppercase font-khand text-h2_mobil md:text-h2_desk text-brun-50 font-bold"
+				>
+					Bryg din yndlingskaffe derhjemme
+				</h2>
+				<hr class="border-grå-50 border" />
+
+				<p
+					class="font-montserrat text-brun-50 text-p_mobil md:text-p_desk py-s"
+				>
+					Perfekt til dig, der værdsætter en ren og balanceret kop
+					kaffe, hvor hver nuance får lov at træde frem. <br /> Find
+					din favorit blandt vores sortiment og oplev din kaffe på et
+					helt nyt niveau.
+				</p>
+			</div>
+			<div>
+				<Image
+					src={kaffer}
+					alt="billeder af friske kaffebønner"
+					class="w-full h-[800px] object-cover z-10"
+				/>
+			</div>
 		</section>
 	</article>
 </MainLayout>
