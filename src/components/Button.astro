@@ -2,9 +2,13 @@
 
 ---
 
-<div>
+<div class="relative group inline-block">
   <button
-    class="bg-grå-900 text-blå-50 text-h4_mobil lg:text-h4_desk font-khand px-xs py-xxs"
-    ><slot /></button
+    class="relative bg-grå-900 text-blå-50 hover:text-grå-900 text-h4_mobil lg:text-h4_desk font-khand px-s py-xxs overflow-hidden border border-transparent group-hover:border-grå-900"
   >
+    <span class="relative z-10"><slot /></span>
+    <span
+      class="absolute inset-0 bg-white transition-transform transform scale-x-0 group-hover:scale-x-100 origin-left duration-300"
+    ></span>
+  </button>
 </div>
