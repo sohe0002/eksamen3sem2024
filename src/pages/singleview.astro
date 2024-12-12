@@ -1,0 +1,158 @@
+---
+import Button from "../components/Button.astro";
+import BorderButton from "../components/Button.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import Bekele from "../assets/images/bekele_single.webp";
+import { Image } from "astro:assets";
+---
+
+<MainLayout>
+  <article class="bg-brun-50">
+    <section class="grid lg:grid-cols-2">
+      <div class="mx-md">
+        <div class="lg:flex">
+          <h1
+            class="font-montserrat text-h1_mobil text-center lg:text-h1_desk text-grå-900"
+          >
+            BEKELE
+          </h1>
+          <hr class="border-rød-400 border-2 lg:hidden" />
+          <Image
+            src={Bekele}
+            alt="billede af bekele kaffen"
+            class="w-auto h-[350px] grid mx-auto lg:hidden"
+          />
+          <h2
+            class="font-montserrat lg:text-p_desk text-grå-900 grid content-end"
+          >
+            Sidama, Ethiopia
+          </h2>
+        </div>
+        <hr class="border-rød-400 border-2 hidden lg:block" />
+        <p class="text-p_stormobil font-bold font-montserrat">
+          Sød, frisk og fyldig.
+        </p>
+        <p class="text-p_stormobil font-bold font-montserrat">
+          Aroma af jordbærslik, ananas og papaya
+        </p>
+        <div class="grid grid-cols-2 py-s">
+          <div class="font-montserrat text-p_mobil text-rød-500">
+            <p>PRODUCERET SAMMEN MED</p>
+            <p>KVALITETSBONUS</p>
+            <p>VARIANTER</p>
+            <p>HØJDE</p>
+            <p>HØSTKALENDER</p>
+            <p>PROCES</p>
+          </div>
+          <div
+            class="font-montserrat text-p_mobil text-brun-900 grid justify-end text-end"
+          >
+            <p>Bekele Karchara</p>
+            <p>156%</p>
+            <p>74-158 Kurume</p>
+            <p>2,350 moh</p>
+            <p>November - Januar</p>
+            <p>Natural</p>
+          </div>
+        </div>
+        <p class="font-montserrat text-h2_mobil text-rød-900 pt-xxs">134 DKK</p>
+        <p class="font-montserrat text-p_mobil text-rød-700 pb-s">250 G</p>
+        <div class="flex gap-s text-h4_mobil">
+          <Button>KØB</Button>
+          <BorderButton>ABONNER</BorderButton>
+        </div>
+      </div>
+      <hr class="border-rød-400 border-2 lg:hidden my-s" />
+      <div>
+        <Image
+          src={Bekele}
+          alt="billede af bekele kaffen"
+          class="w-full h-[350px] hidden lg:block"
+        />
+      </div>
+    </section>
+    <section class="mx-md">
+      <div>
+        <h2 class="font-montserrat text-h2_mobil text-rød-900 pt-s pb-xxs">
+          KAFFEFARMEN
+        </h2>
+        <p class="font-montserrat text-p_mobil text-grå-900">
+          Bekele Karchara driver flere små forarbejdningssteder af kaffe i det
+          samme område. Det sted, vi arbejder med, er det højeste, hvor de
+          dyrker og forarbejder kaffe i 2.350 meters højde i Murago-området i
+          Sidama. <br />
+          <br /> Fordi luften er tynd i denne højde, og temperaturen er køligere,
+          udvikler bærrene sig meget langsomt. Dette resulterer i en kompleks kaffe
+          med masser af aroma. Alt bliver produceret uden elektricitet eller vand,
+          og der plantes lokale træsorter overalt for at påvirke naturen så lidt
+          som muligt. <br />
+          <br /> Bekele arbejder både med sin egen kaffe og med kaffen fra 75 andre
+          lokale farmere. Han har været omkring kaffe siden sin barndom, da hans
+          forældre var kaffefarmere i lavlandet omkring Murago.
+        </p>
+      </div>
+      <div>
+        <Image
+          src={Bekele}
+          alt="billede af bekele kaffen"
+          class="w-full h-[350px] lg:block"
+        />
+      </div>
+    </section>
+    <section class="bg-grøn-400 py-md">
+      <div>
+        <Image
+          src={Bekele}
+          alt="billede af bekele kaffen"
+          class="w-full h-[350px] lg:block"
+        />
+      </div>
+    </section>
+    <section class="bg-grå-300 py-md">
+      <div class="mx-md">
+        <div>
+          <p class="font-montserrat text-p_mobil text-grå-900">BRYGGEGUIDE</p>
+          <p class="font-khand text-h2_mobil font-bold text-grå-900">
+            Bryg din yndlings kaffe derhjemme
+          </p>
+          <p class="font-montserrat text-p_mobil text-grå-900 py-s">
+            Bryg din yndlingskaffe derhjemme ligesom vores talentfulde
+            baristaer. Find din foretrukne bryggemetode og lad os hjælpe dig med
+            at få mest ud af dit udstyr.
+          </p>
+          <Button>UDFORSK VORES GUIDES</Button>
+        </div>
+        <div>
+          <Image
+            src={Bekele}
+            alt="billede af bekele kaffen"
+            class="w-full h-[350px] lg:block"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="bg-rød-300">
+      <div class="mx-md py-md">
+        <h2>MÅSKE NOGET FOR DIG?</h2>
+        <div class="grid grid-cols-2">
+          <div>
+            <Image
+              src={Bekele}
+              alt="billede af bekele kaffen"
+              class="w-full h-[350px] lg:block"
+            />
+            <p class="text-center">Kieni</p>
+          </div>
+          <div>
+            <Image
+              src={Bekele}
+              alt="billede af bekele kaffen"
+              class="w-full h-[350px] lg:block"
+            />
+            <p class="text-center">Silvia</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+</MainLayout>
