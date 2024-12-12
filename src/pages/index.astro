@@ -216,7 +216,7 @@ import BlaButton from "../components/BlaButton.astro";
             farmerne med unikke fortællinger fra deres hverdag.
           </p>
           <div class="">
-            <form class="py-md grid grid-cols-2 gap-20">
+            <form class="py-md grid grid-cols-2 gap-8">
               <!-- Email input -->
               <div>
                 <label
@@ -226,23 +226,14 @@ import BlaButton from "../components/BlaButton.astro";
                 <input
                   type="email"
                   id="email"
-                  class="w-full p-4 bg-grå-400 text-gray-900 font-montserrat outline-none border-none focus:outline-none focus:border-none focus:ring-0"
+                  class="w-full p-4 bg-blå-100 text-gray-900 font-montserrat outline-none border-none focus:outline-none focus:border-none focus:ring-0"
                   placeholder="E-mail"
                 />
               </div>
-
-              <!-- Password input -->
-              <div>
-                <label
-                  for="password"
-                  class="block text-sm font-montserrat font-medium text-blå-50"
-                ></label>
-                <input
-                  type="password"
-                  id="password"
-                  class="w-fit p-4 bg-blå-600 font-montserrat text-blå-50 outline-none border-none focus:outline-none focus:border-none focus:ring-0"
-                  placeholder="Password"
-                />
+              <div class="">
+                <a href="/logind">
+                  <BlaButton>TILMELD</BlaButton>
+                </a>
               </div>
             </form>
           </div>
