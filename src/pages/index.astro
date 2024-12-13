@@ -36,7 +36,7 @@ import BlaButton from "../components/BlaButton.astro";
         COFFEE COLLECTIVE
       </h1>
     </section>
-    <section class="bg-grøn-500 md:py-xl md:px-2xl reletive px-md pt-md pb-s">
+    <section class="bg-grøn-500 md:pt-xl md:px-2xl reletive px-md pt-md pb-s">
       <h4
         class="uppercase font-khand text-h4_mobil md:text-h4_desk text-brun-50"
       >
@@ -63,7 +63,7 @@ import BlaButton from "../components/BlaButton.astro";
           </p>
           <div class="grid-cols-2 grid py-s">
             <GronBorderButton>UDFORSK VORES KAFFE</GronBorderButton>
-            <GronButton>ABONNER</GronButton>
+            <a href="/abonner"><GronButton>ABONNER</GronButton></a>
           </div>
         </div>
         <div>
@@ -93,8 +93,10 @@ import BlaButton from "../components/BlaButton.astro";
       >
         <div>
           <div class="grid-cols-2 grid py-s">
-            <RodButton>ABONNER</RodButton>
-            <RodBorderButton>UDFORSK VORES KAFFE</RodBorderButton>
+            <a href="/abonner"> <RodButton>ABONNER</RodButton></a>
+            <a href="/shop"
+              ><RodBorderButton>UDFORSK VORES KAFFE</RodBorderButton></a
+            >
           </div>
         </div>
         <div>
@@ -138,7 +140,7 @@ import BlaButton from "../components/BlaButton.astro";
             niveau.
           </p>
           <div class="grid-cols-2 grid py-s">
-            <BlaButton>LÆS MERE</BlaButton>
+            <a href="/omos"><BlaButton>LÆS MERE</BlaButton></a>
           </div>
         </div>
         <div>

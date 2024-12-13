@@ -7,7 +7,34 @@ import MorkBorderButton from "../components/MorkBorderButton.astro";
 ---
 
 <MainLayout title="Abonner">
-  <article class="px-md md:px-xl pt-s pb-xl">
+  <article class="relative px-md md:px-xl pt-s pb-xl overflow-hidden">
+    <!-- Baggrundsmønster med små trekanter i højre nederste trekant -->
+    <div class="absolute bottom-0 right-0 w-[80vw] h-[80vh] z-[-1]">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="xMidYMid slice"
+        class="w-full h-full opacity-40"
+      >
+        <defs>
+          <pattern
+            id="triangle-pattern"
+            width="10"
+            height="10"
+            patternUnits="userSpaceOnUse"
+          >
+            <polygon points="0,10 5,0 10,10" fill="#d4cbb8"></polygon>
+          </pattern>
+        </defs>
+        <!-- Afgrænser området til at være trekantet -->
+        <rect
+          width="100%"
+          height="100%"
+          fill="url(#triangle-pattern)"
+          clip-path="polygon(0% 100%, 100% 100%, 100% 0%)"></rect>
+      </svg>
+    </div>
+
     <h1 class="font-khand text-grå-900 text-h2_mobil md:text-h2_desk">
       KVALITETSKAFFE DIREKTE TIL DØREN
     </h1>
@@ -19,9 +46,7 @@ import MorkBorderButton from "../components/MorkBorderButton.astro";
           Med vores kaffeabonnement får du friskristet kaffe leveret direkte til
           din postkasse – helt efter dine præferencer. Vælg mellem forskellige
           typer og leveringsintervaller, så du altid har din favoritkaffe lige
-          ved hånden. Vi sørger for, at kaffen er ristet til perfektion og sendt
-          afsted, mens smagen er på sit allerbedste. En nem og fleksibel løsning
-          til kaffeelskere, der ikke vil gå på kompromis.
+          ved hånden.
         </p>
 
         <div class="grid grid-cols-2 py-s">
