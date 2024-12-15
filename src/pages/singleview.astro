@@ -16,112 +16,134 @@ import silvia from "../assets/images/silvia.webp";
 <MainLayout>
   <article class="bg-brun-50">
     <section class="grid lg:grid-cols-2">
-      <div class="">
-        <div class="lg:flex relative">
-          <h1
-            class="font-montserrat text-h1_mobil text-center lg:text-h1_desk text-grå-900 mx-md"
-          >
-            BEKELE
-          </h1>
-          <hr class="border-rød-400 border-2 lg:hidden relative my-lg z-0" />
-          <Image
-            src={Bekele}
-            alt="billede af bekele kaffen"
-            class="w-auto h-[350px] grid mx-auto lg:hidden mx-md -mt-[175px] relative z-10"
-          />
-          <h2
-            class="font-montserrat lg:text-p_desk text-grå-900 grid content-end mx-md"
-          >
-            Sidama, Ethiopia
-          </h2>
-        </div>
-        <hr class="border-rød-400 border-2 hidden lg:block" />
-        <p class="text-p_stormobil font-bold font-montserrat mx-md">
-          Sød, frisk og fyldig.
-        </p>
-        <p class="text-p_stormobil font-bold font-montserrat mx-md">
-          Aroma af jordbærslik, ananas og papaya
-        </p>
-        <div class="grid grid-cols-2 py-s mx-md">
-          <div class="font-montserrat text-p_mobil text-rød-500">
-            <p>PRODUCERET SAMMEN MED</p>
-            <p>KVALITETSBONUS</p>
-            <p>VARIANTER</p>
-            <p>HØJDE</p>
-            <p>HØSTKALENDER</p>
-            <p>PROCES</p>
+      <!-- Venstre kolonne -->
+      <div class="flex flex-col justify-between">
+        <div>
+          <div class="lg:flex relative">
+            <h1
+              class="font-montserrat text-h1_mobil text-center lg:text-left lg:text-h1_desk text-grå-900 mx-md lg:mx-lg lg:pb-xxs"
+            >
+              BEKELE
+            </h1>
+            <hr class="border-rød-400 border-2 lg:hidden relative my-lg z-0" />
+            <Image
+              src={Bekele}
+              alt="billede af bekele kaffen"
+              class="w-auto h-[350px] grid mx-auto lg:hidden mx-md lg:mx-lg -mt-[175px] relative z-10"
+            />
+            <h2
+              class="font-montserrat lg:text-p_desk text-grå-900 grid content-end mx-md lg:mx-lg"
+            >
+              Sidama, Ethiopia
+            </h2>
           </div>
-          <div
-            class="font-montserrat text-p_mobil text-brun-900 grid justify-end text-end"
+          <hr class="border-rød-400 border-2 hidden lg:block" />
+          <p
+            class="text-p_stormobil font-bold font-montserrat mx-md lg:mx-lg lg:text-p_desk lg:pt-xxs"
           >
-            <p>Bekele Karchara</p>
-            <p>156%</p>
-            <p>74-158 Kurume</p>
-            <p>2,350 moh</p>
-            <p>November - Januar</p>
-            <p>Natural</p>
+            Sød, frisk og fyldig. <br class="lg:hidden" /> Aroma af jordbærslik,
+            ananas og papaya.
+          </p>
+          <div class="grid grid-cols-2 py-s mx-md lg:mx-lg lg:my-md lg:mr-3xl">
+            <div
+              class="font-montserrat text-p_mobil text-rød-500 lg:text-p_lilledesk"
+            >
+              <p>PRODUCERET SAMMEN MED</p>
+              <p>KVALITETSBONUS</p>
+              <p>VARIANTER</p>
+              <p>HØJDE</p>
+              <p>HØSTKALENDER</p>
+              <p>PROCES</p>
+            </div>
+            <div
+              class="font-montserrat text-p_mobil text-brun-900 grid justify-end text-end lg:text-p_lilledesk"
+            >
+              <p>Bekele Karchara</p>
+              <p>156%</p>
+              <p>74-158 Kurume</p>
+              <p>2,350 moh</p>
+              <p>November - Januar</p>
+              <p>Natural</p>
+            </div>
           </div>
+          <p
+            class="font-montserrat text-h2_mobil text-rød-900 pt-xxs mx-md lg:mx-lg lg:text-h3_desk"
+          >
+            134 DKK
+          </p>
+          <p
+            class="font-montserrat text-p_mobil text-rød-700 pb-s mx-md lg:mx-lg lg:text-p_stordesk"
+          >
+            250 G
+          </p>
         </div>
-        <p class="font-montserrat text-h2_mobil text-rød-900 pt-xxs mx-md">
-          134 DKK
-        </p>
-        <p class="font-montserrat text-p_mobil text-rød-700 pb-s mx-md">
-          250 G
-        </p>
-        <div class="flex gap-s text-h4_mobil mx-md">
+        <!-- Knapper placeret i bunden -->
+        <div
+          class="flex gap-s text-h4_mobil mx-md lg:mx-lg lg:mt-auto lg:mb-2xl"
+        >
           <Button>KØB</Button>
           <BorderButton>ABONNER</BorderButton>
         </div>
       </div>
+
+      <!-- Højre kolonne -->
       <hr class="border-rød-400 border-2 lg:hidden my-s" />
-      <div>
+      <div class="lg:bg-rød-500">
         <Image
           src={Bekele}
           alt="billede af bekele kaffen"
-          class="w-full h-[350px] hidden lg:block"
+          class="w-full h-[350px] hidden lg:block lg:h-[750px] lg:w-auto lg:mx-auto lg:my-[5%]"
         />
       </div>
     </section>
+
     <section>
-      <div class="mx-md">
-        <h2 class="font-montserrat text-h2_mobil text-rød-900 pt-s pb-xxs">
-          KAFFEFARMEN
-        </h2>
-        <p class="font-montserrat text-p_mobil text-grå-900 mb-md">
-          Bekele Karchara driver flere små forarbejdningssteder af kaffe i det
-          samme område. Det sted, vi arbejder med, er det højeste, hvor de
-          dyrker og forarbejder kaffe i 2.350 meters højde i Murago-området i
-          Sidama. <br />
-          <br /> Fordi luften er tynd i denne højde, og temperaturen er køligere,
-          udvikler bærrene sig meget langsomt. Dette resulterer i en kompleks kaffe
-          med masser af aroma. Alt bliver produceret uden elektricitet eller vand,
-          og der plantes lokale træsorter overalt for at påvirke naturen så lidt
-          som muligt. <br />
-          <br /> Bekele arbejder både med sin egen kaffe og med kaffen fra 75 andre
-          lokale farmere. Han har været omkring kaffe siden sin barndom, da hans
-          forældre var kaffefarmere i lavlandet omkring Murago.
-        </p>
-      </div>
-      <div>
-        <Image
-          src={farmer4}
-          alt="billede af en farmer"
-          class="w-full h-[550px] object-cover"
-        />
+      <hr class="border-rød-400 border-2 hidden lg:block" />
+      <div class="lg:grid lg:grid-cols-2">
+        <div class="mx-md lg:mx-lg">
+          <h2
+            class="font-montserrat text-h2_mobil text-rød-900 pt-s pb-xxs lg:text-h2_desk lg:my-xs"
+          >
+            KAFFEFARMEN
+          </h2>
+          <p
+            class="font-montserrat text-p_mobil text-grå-900 mb-m lg:text-p_stordesk"
+          >
+            Bekele Karchara driver flere små forarbejdningssteder af kaffe i det
+            samme område. Det sted, vi arbejder med, er det højeste, hvor de
+            dyrker og forarbejder kaffe i 2.350 meters højde i Murago-området i
+            Sidama. <br />
+            <br /> Fordi luften er tynd i denne højde, og temperaturen er køligere,
+            udvikler bærrene sig meget langsomt. Dette resulterer i en kompleks kaffe
+            med masser af aroma. Alt bliver produceret uden elektricitet eller vand,
+            og der plantes lokale træsorter overalt for at påvirke naturen så lidt
+            som muligt. <br />
+            <br /> Bekele arbejder både med sin egen kaffe og med kaffen fra 75 andre
+            lokale farmere. Han har været omkring kaffe siden sin barndom, da hans
+            forældre var kaffefarmere i lavlandet omkring Murago.
+          </p>
+        </div>
+        <div>
+          <Image
+            src={farmer4}
+            alt="billede af en farmer"
+            class="w-full h-[550px] object-cover lg:h-[850px]"
+          />
+        </div>
       </div>
     </section>
-    <section class="">
+    <section class="bg-grøn-400">
       <div
-        class="relative w-full max-w-2xl mx-auto overflow-hidden bg-grøn-400 py-xl"
+        class="relative w-full max-w-2xl mx-auto overflow-hidden py-xl lg:max-w-[1500px]"
       >
         <!-- Slider Container -->
         <div id="slider" class="flex transition-transform duration-500">
           <!-- Slide 1 -->
-          <div class="relative w-full flex-shrink-0 pl-lg">
+          <div class="relative w-full flex-shrink-0 pl-lg lg:pl-[400px]">
             <Image
               src={bekeleslide1}
               alt="Bønnerne bliver tørret på høje tørreborde"
-              class="w-full h-80 object-cover"
+              class="w-full h-80 object-cover lg:h-[700px] lg:w-[1300px] lg:objebt-fit"
             />
 
             <p
@@ -176,13 +198,21 @@ import silvia from "../assets/images/silvia.webp";
       </div>
     </section>
     <section class="bg-grå-300 py-md">
-      <div class="mx-md">
+      <div class="mx-md lg:mx-lg lg:grid lg:grid-cols-2 lg:gap-lg">
         <div>
-          <p class="font-montserrat text-p_mobil text-grå-900">BRYGGEGUIDE</p>
-          <p class="font-khand text-h2_mobil font-bold text-grå-900">
+          <p
+            class="font-montserrat text-p_mobil text-grå-900 lg:text-p_lilledesk"
+          >
+            BRYGGEGUIDE
+          </p>
+          <p
+            class="font-khand text-h2_mobil font-bold text-grå-900 lg:text-h2_desk"
+          >
             Bryg din yndlings kaffe derhjemme
           </p>
-          <p class="font-montserrat text-p_mobil text-grå-900 py-s">
+          <p
+            class="font-montserrat text-p_mobil text-grå-900 py-s lg:text-p_stordesk"
+          >
             Bryg din yndlingskaffe derhjemme ligesom vores talentfulde
             baristaer. Find din foretrukne bryggemetode og lad os hjælpe dig med
             at få mest ud af dit udstyr.
@@ -195,37 +225,58 @@ import silvia from "../assets/images/silvia.webp";
           <Image
             src={kaffeguide}
             alt="billede af kaffe"
-            class="w-auto h-[350px] object-cover"
+            class="w-auto h-[350px] object-cover lg:ml-auto"
           />
         </div>
       </div>
     </section>
     <section class="bg-rød-300">
-      <div class="mx-md py-md">
-        <h2 class="font-montserrat text-h3_mobil text-grå-90l font">
+      <div class="mx-md lg:mx-lg py-md">
+        <h2 class="font-montserrat text-h3_mobil text-grå-900 lg:text-h3_desk">
           MÅSKE NOGET FOR DIG?
         </h2>
-        <div class="grid grid-cols-2 py-s gap-md">
+        <div class="grid grid-cols-2 lg:grid-cols-3 py-s gap-md">
           <div>
             <Image
               src={kieni_es}
               alt="billede af bekele kaffen"
-              class="w-auto h-[300px] object-cover lg:block"
+              class="w-auto h-[300px] lg:h-[500px] object-cover"
             />
-            <p class="text-center">Kieni</p>
+            <p class="text-center font-montserrat lg:text-p_desk text-grå-900">
+              Kieni
+            </p>
           </div>
           <div>
             <Image
               src={silvia}
               alt="billede af bekele kaffen"
-              class="w-auto h-[300px] object-cover lg:block"
+              class="w-auto h-[300px] lg:h-[500px] object-cover lg:block"
             />
-            <p class="text-center">Silvia</p>
+            <p class="text-center font-montserrat lg:text-p_desk text-grå-900">
+              Silvia
+            </p>
+          </div>
+          <div class="hidden lg:block">
+            <Image
+              src={silvia}
+              alt="billede af bekele kaffen"
+              class="w-auto h-[300px] lg:h-[500px] object-cover lg:block"
+            />
+            <p class="text-center font-montserrat lg:text-p_desk text-grå-900">
+              Aga
+            </p>
           </div>
         </div>
       </div>
     </section>
   </article>
+  <section class="product">
+    <h1 class="product-name">[Produktnavn]</h1>
+    <h2 class="product-info">[Produktinfo]</h2>
+    <p class="smag">[Smagsbeskrivelse]</p>
+    <p class="pris">[Pris]</p>
+    <img class="product-image" src="[DefaultImage]" alt="Produktbillede" />
+  </section>
   <script>
     const slider = document.getElementById("slider");
     const prevButton = document.getElementById("prev");

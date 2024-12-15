@@ -141,16 +141,4 @@ import MainLayout from "../layouts/MainLayout.astro";
       </div>
     </section>
   </article>
-
-  <script>
-    function navigateToProduct(name, info, smag, pris, image) {
-      const url = new URL("/singleview", window.location.origin); // Ret filsti
-      url.searchParams.set("name", name);
-      url.searchParams.set("info", info);
-      url.searchParams.set("smag", smag);
-      url.searchParams.set("pris", pris);
-      url.searchParams.set("image", image);
-      window.location.href = url.toString();
-    }
-  </script>
 </MainLayout>
