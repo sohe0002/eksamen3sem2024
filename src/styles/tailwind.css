@@ -54,5 +54,17 @@
       .p_blå{
         @apply font-montserrat text-blå-500;
       }
+      .p_rød{
+        @apply font-montserrat text-rød-500;
+      }
+
+      .h1_grå, .h2_grå, .h3_grå{
+        @apply font-khand text-grå-900;
+      }
+
+      .h1_rød, .h2_rød{
+        @apply font-khand text-rød-900;
+      }
+
  
   }
