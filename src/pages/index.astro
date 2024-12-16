@@ -366,11 +366,96 @@ import "motion";
           </svg>
         </div>
       </div>
+
+      <article class="">
+        <div class="sticky top-1/4 mangeelementerinview grid grid-cols-1 gap-4">
+          <!-- Første række (1 trekant) -->
+          <div class="flex justify-center mb-2">
+            <div
+              class="w-0 h-0 border-l-[16px] border-r-[16px] border-b-[32px] border-transparent border-b-blue-200 rotate-90"
+            >
+            </div>
+          </div>
+
+          <!-- Anden række (2 trekanter) -->
+          <div class="flex justify-center mb-2">
+            <div
+              class="w-0 h-0 border-l-[16px] border-r-[16px] border-b-[32px] border-transparent border-b-blue-200 mx-2 rotate-90"
+            >
+            </div>
+            <div
+              class="w-0 h-0 border-l-[16px] border-r-[16px] border-b-[32px] border-transparent border-b-blue-200 mx-2 rotate-90"
+            >
+            </div>
+          </div>
+
+          <!-- Tredje række (3 trekanter) -->
+          <div class="flex justify-center mb-2">
+            <div
+              class="w-0 h-0 border-l-[16px] border-r-[16px] border-b-[32px] border-transparent border-b-blue-200 mx-2 rotate-90"
+            >
+            </div>
+            <div
+              class="w-0 h-0 border-l-[16px] border-r-[16px] border-b-[32px] border-transparent border-b-blue-200 mx-2 rotate-90"
+            >
+            </div>
+            <div
+              class="w-0 h-0 border-l-[16px] border-r-[16px] border-b-[32px] border-transparent border-b-blue-200 mx-2 rotate-90"
+            >
+            </div>
+          </div>
+
+          <!-- Fjerde række (4 trekanter) -->
+          <div class="flex justify-center mb-2">
+            <div
+              class="w-0 h-0 border-l-[16px] border-r-[16px] border-b-[32px] border-transparent border-b-blue-200 mx-2 rotate-90"
+            >
+            </div>
+            <div
+              class="w-0 h-0 border-l-[16px] border-r-[16px] border-b-[32px] border-transparent border-b-blue-200 mx-2 rotate-90"
+            >
+            </div>
+            <div
+              class="w-0 h-0 border-l-[16px] border-r-[16px] border-b-[32px] border-transparent border-b-blue-200 mx-2 rotate-90"
+            >
+            </div>
+            <div
+              class="w-0 h-0 border-l-[16px] border-r-[16px] border-b-[32px] border-transparent border-b-blue-200 mx-2 rotate-90"
+            >
+            </div>
+          </div>
+
+          <!-- Femte række (5 trekanter) -->
+          <div class="flex justify-center mb-2">
+            <div
+              class="w-0 h-0 border-l-[16px] border-r-[16px] border-b-[32px] border-transparent border-b-blue-200 mx-2 rotate-90"
+            >
+            </div>
+            <div
+              class="w-0 h-0 border-l-[16px] border-r-[16px] border-b-[32px] border-transparent border-b-blue-200 mx-2 rotate-90"
+            >
+            </div>
+            <div
+              class="w-0 h-0 border-l-[16px] border-r-[16px] border-b-[32px] border-transparent border-b-blue-200 mx-2 rotate-90"
+            >
+            </div>
+            <div
+              class="w-0 h-0 border-l-[16px] border-r-[16px] border-b-[32px] border-transparent border-b-blue-200 mx-2 rotate-90"
+            >
+            </div>
+            <div
+              class="w-0 h-0 border-l-[16px] border-r-[16px] border-b-[32px] border-transparent border-b-blue-200 mx-2 rotate-90"
+            >
+            </div>
+          </div>
+        </div>
+      </article>
     </section>
   </article>
 
   <script>
     import { inView } from "motion";
+    import { animate } from "motion";
 
     // <-- animation section 1 -->
     // <-- inview section1 h2 -->
@@ -452,6 +537,97 @@ import "motion";
         "animate__animated",
         "animate__fadeInUpBig"
       );
+    });
+
+    inView(".mangeelementerinview", () => {
+      console.log("Element er i view!");
+      // Resten af animationerne...
+    });
+
+    /* Mange elementer der animerer ind */
+    inView(".mangeelementerinview", () => {
+      animate(
+        ".mangeelementer1",
+        { x: [-2000, 0], y: [-50, 0] },
+        { duration: 1 }
+      );
+      animate(
+        ".mangeelementer2",
+        { x: [-1500, 0], y: [-100, 0] },
+        { duration: 3 }
+      );
+      animate(
+        ".mangeelementer3",
+        { x: [-1000, 0], y: [-150, 0] },
+        { duration: 3 }
+      );
+      animate(".mangeelementer4", { x: [1750, 0] }, { duration: 2 });
+      animate(
+        ".mangeelementer5",
+        { x: [-2000, 0], y: [-100, 0] },
+        { duration: 1 }
+      );
+      animate(".mangeelementer6", { x: [2000, 0] }, { duration: 2 });
+      animate(
+        ".mangeelementer7",
+        { x: [1500, 0], y: [50, 0] },
+        { duration: 3 }
+      );
+      animate(
+        ".mangeelementer8",
+        { x: [1000, 0], y: [150, 0] },
+        { duration: 2 }
+      );
+      animate(".mangeelementer9", { x: [1500, 0], y: [0, 0] }, { duration: 1 });
+      animate(
+        ".mangeelementer10",
+        { x: [2000, 0], y: [50, 0] },
+        { duration: 2 }
+      );
+      return () => {
+        animate(
+          ".mangeelementer1",
+          { x: [-2000, 0], y: [-50, 0] },
+          { duration: 1 }
+        );
+        animate(
+          ".mangeelementer2",
+          { x: [-1500, 0], y: [-100, 0] },
+          { duration: 3 }
+        );
+        animate(
+          ".mangeelementer3",
+          { x: [-1000, 0], y: [-150, 0] },
+          { duration: 3 }
+        );
+        animate(".mangeelementer4", { x: [1750, 0] }, { duration: 2 });
+        animate(
+          ".mangeelementer5",
+          { x: [-2000, 0], y: [-100, 0] },
+          { duration: 1 }
+        );
+        animate(".mangeelementer6", { x: [2000, 0] }, { duration: 2 });
+        animate(
+          ".mangeelementer7",
+          { x: [1500, 0], y: [50, 0] },
+          { duration: 3 }
+        );
+        animate(
+          ".mangeelementer8",
+          { x: [1000, 0], y: [150, 0] },
+          { duration: 2 }
+        );
+        animate(
+          ".mangeelementer9",
+          { x: [1500, 0], y: [0, 0] },
+          { duration: 1 }
+        );
+        animate(
+          ".mangeelementer10",
+          { x: [2000, 0], y: [50, 0] },
+          { duration: 2 }
+        );
+      };
     });
   </script>
 </MainLayout>
