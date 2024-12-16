@@ -23,7 +23,6 @@
       @apply font-montserrat font-black;
     }
 
-
     .khand-light {
         @apply font-khand font-light;
       }
@@ -43,10 +42,29 @@
       .khand-bold {
         @apply font-khand font-bold;
       }
-  }
 
-  @layer utilities {
-    .clip-triangle {
-      clip-path: polygon(100% 0, 100% 100%, 0% 100%);
-    }
+      .p_grå{
+        @apply font-montserrat text-grå-900;
+      }
+
+      .p_lysgrå{
+        @apply font-montserrat text-grå-50;
+      }
+
+      .p_blå{
+        @apply font-montserrat text-blå-500;
+      }
+      .p_rød{
+        @apply font-montserrat text-rød-500;
+      }
+
+      .h1_grå, .h2_grå, .h3_grå{
+        @apply font-khand text-grå-900;
+      }
+
+      .h1_rød, .h2_rød{
+        @apply font-khand text-rød-900;
+      }
+
+ 
   }
