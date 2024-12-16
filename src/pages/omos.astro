@@ -12,6 +12,8 @@ import farm from "../assets/images/farm.webp";
 import klaus from "../assets/images/klaus.webp";
 import peter from "../assets/images/peter.webp";
 import casper from "../assets/images/casper.webp";
+import forest from "../assets/images/forest.webp";
+import data from "../assets/images/data.jpg";
 ---
 
 <MainLayout title="om_os">
@@ -59,7 +61,7 @@ import casper from "../assets/images/casper.webp";
         </section>
         <section>
             <div
-                class="grid grid-cols-1 md:grid-cols-4 gap-8 md:mx-40 md:my-3xl relative"
+                class="grid grid-cols-1 md:grid-cols-4 gap-8 md:mx-40 md:my-3xl relative m-s mb-lg"
             >
                 <!-- Lodret tekst -->
                 <div
@@ -155,6 +157,44 @@ import casper from "../assets/images/casper.webp";
                 class="w-full h-[300px] object-cover"
             />
         </section>
+        <section class="md:py-md md:mx-40 mx-s">
+            <h3 class="md:text-h3_desk uppercase font-khand mt-20">
+                collective forest
+            </h3>
+            <div
+                class="grid md:grid-cols-2 md:gap-20 gap-10 md:text-p_desk text-p_mobil font-montserrat"
+            >
+                <div class="grid md:gap-10 h-[500px]">
+                    <p>
+                        I Danmark er 15 % af landet dækket af skov, men hele 85
+                        % af disse skove bruges til produktion. Det betyder, at
+                        kun en meget lille del af Danmarks skove er urørte eller
+                        naturlige.
+                    </p>
+                    <Image
+                        src={forest}
+                        alt="billeder fra collective forest"
+                        class="h-full"
+                    />
+                </div>
+                <div class="grid md:gap-10 h-[500px]">
+                    <p>
+                        Med projektet Collective Forest ønsker vi at bidrage til
+                        at løse klimaforandringerne ved at øge skovenes evne til
+                        at binde CO₂. I gennemsnit vil skoven binde omkring 250
+                        tons CO₂ om året. Skoven vil blive forvaltet som en
+                        naturnær skov, hvor naturen får lov til at passe sig
+                        selv så vidt muligt.
+                    </p>
+                    <Image
+                        src={data}
+                        alt="billeder af datavisualisering"
+                        class="h-full"
+                    />
+                </div>
+            </div>
+        </section>
+
         <section class="my-24">
             <h2
                 class="uppercase md:ml-44 ml-xs mt-md mb-xxs md:text-h2_desk text-h2_mobil font-khand"
