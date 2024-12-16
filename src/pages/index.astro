@@ -20,357 +20,438 @@ import GronButton from "../components/GronButton.astro";
 import RodBorderButton from "../components/RodBorderButton.astro";
 import RodButton from "../components/RodButton.astro";
 import BlaButton from "../components/BlaButton.astro";
+import "motion";
 ---
 
 <MainLayout title="FORSIDE">
-	<article>
-		<section>
-			<Image
-				src={forside}
-				alt="billeder af friske kaffebønner"
-				class="w-full h-[800px] object-cover z-10"
-			/>
-			<div class="absolute z-30 top-1/3 left-0 w-full h-full">
-				<svg
-					class="w-full h-full"
-					viewBox="0 0 1234 134"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-				>
-					<g clip-path="url(#clip0_417_5332)">
-						<path
-							d="M331.31 131.41H390.33V115.75H349.26V73.92H384.98V58.06H349.26V17.76H390.33V1.91003H331.31V131.41Z"
-							fill="#FDFDFC"></path>
-						<path
-							d="M408.53 131.41H467.55V115.75H426.49V73.92H462.2V58.06H426.49V17.76H467.55V1.91003H408.53V131.41Z"
-							fill="#FDFDFC"></path>
-						<path
-							d="M542.19 112.69C539.39 110.4 537.99 107.02 537.99 102.57V30.94C537.99 26.36 539.33 22.92 542 20.63C544.8 18.34 549.83 17.19 557.09 17.19C564.35 17.19 571.73 18.27 579.25 20.44V3.81996C572.37 1.90996 564.86 0.959961 556.71 0.959961C544.36 0.959961 535.13 3.50996 529.01 8.59996C522.9 13.57 519.84 20.57 519.84 29.61V103.72C519.84 122.82 532.06 132.37 556.51 132.37C565.42 132.37 573.19 131.35 579.81 129.31V113.08C572.55 115.12 565.17 116.14 557.65 116.14C550.13 116.14 544.98 114.99 542.18 112.7L542.19 112.69Z"
-							fill="#FDFDFC"></path>
-						<path
-							d="M22.35 112.69C19.55 110.4 18.15 107.02 18.15 102.57V30.94C18.15 26.36 19.49 22.92 22.16 20.63C24.96 18.34 29.99 17.19 37.25 17.19C44.51 17.19 51.89 18.27 59.41 20.44V3.81996C52.53 1.90996 45.02 0.959961 36.87 0.959961C24.52 0.959961 15.29 3.50996 9.17 8.59996C3.06 13.56 0 20.56 0 29.6V103.71C0 122.81 12.22 132.36 36.67 132.36C45.58 132.36 53.35 131.34 59.97 129.3V113.07C52.71 115.11 45.33 116.13 37.81 116.13C30.29 116.13 25.14 114.98 22.34 112.69H22.35Z"
-							fill="#FDFDFC"></path>
-						<path
-							d="M258.75 131.41H276.9V77.35H313.95V61.31H276.9V17.76H316.05V1.91003H258.75V131.41Z"
-							fill="#FDFDFC"></path>
-						<path
-							d="M123.82 0.0999756C112.49 0.0999756 103.89 2.95997 98.0399 8.68997C92.3099 14.42 89.4399 22.06 89.4399 31.61V102.09C89.4399 111.51 92.3699 119.09 98.2299 124.82C104.09 130.55 112.68 133.42 124.02 133.42C135.36 133.42 143.95 130.56 149.8 124.82C155.66 119.09 158.59 111.51 158.59 102.09V31.61C158.59 22.19 155.66 14.61 149.8 8.87998C143.94 3.01998 135.28 0.0999756 123.82 0.0999756ZM122.28 133.15L104.85 43.65C101.12 24.51 110.52 5.21998 125.83 0.559976L143.26 90.06C146.99 109.2 137.59 128.49 122.28 133.15Z"
-							fill="#FDFDFC"></path>
-						<path
-							d="M186.2 131.41H204.34V77.35H241.39V61.31H204.34V17.76H243.5V1.91003H186.2V131.41Z"
-							fill="#FDFDFC"></path>
-						<path
-							d="M773.98 1.91003H755.84V131.41H811.8V115.94H773.98V1.91003Z"
-							fill="#FDFDFC"></path>
-						<path
-							d="M1066.64 1.91003H1048.5V131.41H1066.64V1.91003Z"
-							fill="#FDFDFC"></path>
-						<path
-							d="M967.86 17.76H992.5V131.41H1010.65V17.76H1035.29V1.91003H967.86V17.76Z"
-							fill="#FDFDFC"></path>
-						<path
-							d="M1129.25 63.41C1128.48 67.61 1127.08 75.95 1125.04 88.43C1123.01 100.78 1121.42 109.57 1120.27 114.79C1119.76 112.12 1118.36 104.41 1116.07 91.68C1113.9 78.82 1108.11 48.9 1098.69 1.91003H1080.35L1107.66 131.41H1132.88L1160 1.91003H1141.28L1129.25 63.41Z"
-							fill="#FDFDFC"></path>
-						<path
-							d="M1233.05 17.76V1.91003H1174.03V131.41H1233.05V115.75H1191.98V73.92H1227.7V58.06H1191.98V17.76H1233.05Z"
-							fill="#FDFDFC"></path>
-						<path
-							d="M630.51 0C619.18 0 610.58 2.86 604.73 8.59C599 14.32 596.13 21.96 596.13 31.51V101.99C596.13 111.41 599.06 118.99 604.92 124.72C610.78 130.45 619.37 133.31 630.71 133.31C642.05 133.31 650.64 130.45 656.49 124.72C662.35 118.99 665.28 111.41 665.28 101.99V31.52C665.28 22.1 662.35 14.52 656.49 8.79C650.63 2.93 641.97 0 630.51 0ZM647.32 101.23C647.32 111.8 641.78 117.08 630.7 117.08C619.62 117.08 614.08 111.8 614.08 101.23V32.09C614.08 21.65 619.62 16.43 630.7 16.43C641.78 16.43 647.32 21.65 647.32 32.09V101.23Z"
-							fill="#FDFDFC"></path>
-						<path
-							d="M705.16 1.91003H687.01V131.41H742.97V115.94H705.16V1.91003Z"
-							fill="#FDFDFC"></path>
-						<path
-							d="M922.32 112.69C919.52 110.4 918.12 107.02 918.12 102.57V30.94C918.12 26.36 919.46 22.92 922.13 20.63C924.93 18.34 929.96 17.19 937.22 17.19C944.48 17.19 951.86 18.27 959.38 20.44V3.81996C952.5 1.90996 944.99 0.959961 936.84 0.959961C924.49 0.959961 915.26 3.50996 909.14 8.59996C903.03 13.57 899.97 20.57 899.97 29.61V103.72C899.97 122.82 912.19 132.37 936.64 132.37C945.55 132.37 953.32 131.35 959.94 129.31V113.08C952.68 115.12 945.3 116.14 937.78 116.14C930.26 116.14 925.11 114.99 922.31 112.7L922.32 112.69Z"
-							fill="#FDFDFC"></path>
-						<path
-							d="M824.67 131.41H883.68V115.75H842.62V73.92H878.34V58.06H842.62V17.76H883.68V1.91003H824.67V131.41Z"
-							fill="#FDFDFC"></path>
-					</g>
-					<defs>
-						<clipPath id="clip0_417_5332">
-							<rect width="1233.05" height="133.41" fill="white"
-							></rect>
-						</clipPath>
-					</defs>
-				</svg>
-			</div>
-		</section>
-		<section
-			class="bg-grøn-500 md:pt-xl md:px-2xl reletive px-md pt-md pb-s"
-		>
-			<h4
-				class="uppercase font-khand text-h4_mobil md:text-h4_desk text-brun-50"
-			>
-				Kaffe
-			</h4>
-			<h2
-				class="uppercase font-khand text-h2_mobil md:text-h2_desk text-brun-50 font-bold"
-			>
-				Bryg din yndlingskaffe derhjemme
-			</h2>
-			<hr class="border-grå-50 border" />
+  <article>
+    <section>
+      <Image
+        src={forside}
+        alt="billeder af friske kaffebønner"
+        class="w-full h-[800px] object-cover z-10"
+      />
+      <div class="absolute z-30 top-1/3 left-0 w-full h-full">
+        <svg
+          class="w-full h-full"
+          viewBox="0 0 1234 134"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_417_5332)">
+            <path
+              d="M331.31 131.41H390.33V115.75H349.26V73.92H384.98V58.06H349.26V17.76H390.33V1.91003H331.31V131.41Z"
+              fill="#FDFDFC"></path>
+            <path
+              d="M408.53 131.41H467.55V115.75H426.49V73.92H462.2V58.06H426.49V17.76H467.55V1.91003H408.53V131.41Z"
+              fill="#FDFDFC"></path>
+            <path
+              d="M542.19 112.69C539.39 110.4 537.99 107.02 537.99 102.57V30.94C537.99 26.36 539.33 22.92 542 20.63C544.8 18.34 549.83 17.19 557.09 17.19C564.35 17.19 571.73 18.27 579.25 20.44V3.81996C572.37 1.90996 564.86 0.959961 556.71 0.959961C544.36 0.959961 535.13 3.50996 529.01 8.59996C522.9 13.57 519.84 20.57 519.84 29.61V103.72C519.84 122.82 532.06 132.37 556.51 132.37C565.42 132.37 573.19 131.35 579.81 129.31V113.08C572.55 115.12 565.17 116.14 557.65 116.14C550.13 116.14 544.98 114.99 542.18 112.7L542.19 112.69Z"
+              fill="#FDFDFC"></path>
+            <path
+              d="M22.35 112.69C19.55 110.4 18.15 107.02 18.15 102.57V30.94C18.15 26.36 19.49 22.92 22.16 20.63C24.96 18.34 29.99 17.19 37.25 17.19C44.51 17.19 51.89 18.27 59.41 20.44V3.81996C52.53 1.90996 45.02 0.959961 36.87 0.959961C24.52 0.959961 15.29 3.50996 9.17 8.59996C3.06 13.56 0 20.56 0 29.6V103.71C0 122.81 12.22 132.36 36.67 132.36C45.58 132.36 53.35 131.34 59.97 129.3V113.07C52.71 115.11 45.33 116.13 37.81 116.13C30.29 116.13 25.14 114.98 22.34 112.69H22.35Z"
+              fill="#FDFDFC"></path>
+            <path
+              d="M258.75 131.41H276.9V77.35H313.95V61.31H276.9V17.76H316.05V1.91003H258.75V131.41Z"
+              fill="#FDFDFC"></path>
+            <path
+              d="M123.82 0.0999756C112.49 0.0999756 103.89 2.95997 98.0399 8.68997C92.3099 14.42 89.4399 22.06 89.4399 31.61V102.09C89.4399 111.51 92.3699 119.09 98.2299 124.82C104.09 130.55 112.68 133.42 124.02 133.42C135.36 133.42 143.95 130.56 149.8 124.82C155.66 119.09 158.59 111.51 158.59 102.09V31.61C158.59 22.19 155.66 14.61 149.8 8.87998C143.94 3.01998 135.28 0.0999756 123.82 0.0999756ZM122.28 133.15L104.85 43.65C101.12 24.51 110.52 5.21998 125.83 0.559976L143.26 90.06C146.99 109.2 137.59 128.49 122.28 133.15Z"
+              fill="#FDFDFC"></path>
+            <path
+              d="M186.2 131.41H204.34V77.35H241.39V61.31H204.34V17.76H243.5V1.91003H186.2V131.41Z"
+              fill="#FDFDFC"></path>
+            <path
+              d="M773.98 1.91003H755.84V131.41H811.8V115.94H773.98V1.91003Z"
+              fill="#FDFDFC"></path>
+            <path
+              d="M1066.64 1.91003H1048.5V131.41H1066.64V1.91003Z"
+              fill="#FDFDFC"></path>
+            <path
+              d="M967.86 17.76H992.5V131.41H1010.65V17.76H1035.29V1.91003H967.86V17.76Z"
+              fill="#FDFDFC"></path>
+            <path
+              d="M1129.25 63.41C1128.48 67.61 1127.08 75.95 1125.04 88.43C1123.01 100.78 1121.42 109.57 1120.27 114.79C1119.76 112.12 1118.36 104.41 1116.07 91.68C1113.9 78.82 1108.11 48.9 1098.69 1.91003H1080.35L1107.66 131.41H1132.88L1160 1.91003H1141.28L1129.25 63.41Z"
+              fill="#FDFDFC"></path>
+            <path
+              d="M1233.05 17.76V1.91003H1174.03V131.41H1233.05V115.75H1191.98V73.92H1227.7V58.06H1191.98V17.76H1233.05Z"
+              fill="#FDFDFC"></path>
+            <path
+              d="M630.51 0C619.18 0 610.58 2.86 604.73 8.59C599 14.32 596.13 21.96 596.13 31.51V101.99C596.13 111.41 599.06 118.99 604.92 124.72C610.78 130.45 619.37 133.31 630.71 133.31C642.05 133.31 650.64 130.45 656.49 124.72C662.35 118.99 665.28 111.41 665.28 101.99V31.52C665.28 22.1 662.35 14.52 656.49 8.79C650.63 2.93 641.97 0 630.51 0ZM647.32 101.23C647.32 111.8 641.78 117.08 630.7 117.08C619.62 117.08 614.08 111.8 614.08 101.23V32.09C614.08 21.65 619.62 16.43 630.7 16.43C641.78 16.43 647.32 21.65 647.32 32.09V101.23Z"
+              fill="#FDFDFC"></path>
+            <path
+              d="M705.16 1.91003H687.01V131.41H742.97V115.94H705.16V1.91003Z"
+              fill="#FDFDFC"></path>
+            <path
+              d="M922.32 112.69C919.52 110.4 918.12 107.02 918.12 102.57V30.94C918.12 26.36 919.46 22.92 922.13 20.63C924.93 18.34 929.96 17.19 937.22 17.19C944.48 17.19 951.86 18.27 959.38 20.44V3.81996C952.5 1.90996 944.99 0.959961 936.84 0.959961C924.49 0.959961 915.26 3.50996 909.14 8.59996C903.03 13.57 899.97 20.57 899.97 29.61V103.72C899.97 122.82 912.19 132.37 936.64 132.37C945.55 132.37 953.32 131.35 959.94 129.31V113.08C952.68 115.12 945.3 116.14 937.78 116.14C930.26 116.14 925.11 114.99 922.31 112.7L922.32 112.69Z"
+              fill="#FDFDFC"></path>
+            <path
+              d="M824.67 131.41H883.68V115.75H842.62V73.92H878.34V58.06H842.62V17.76H883.68V1.91003H824.67V131.41Z"
+              fill="#FDFDFC"></path>
+          </g>
+          <defs>
+            <clipPath id="clip0_417_5332">
+              <rect width="1233.05" height="133.41" fill="white"></rect>
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+    </section>
+    <section class="bg-grøn-500 md:pt-xl md:px-2xl px-md pt-md pb-s">
+      <h4
+        class="uppercase font-khand text-h4_mobil md:text-h4_desk text-brun-50"
+        id="section1h4"
+      >
+        Kaffe
+      </h4>
+      <h2
+        class="uppercase font-khand text-h2_mobil md:text-h2_desk text-brun-50 font-bold"
+        id="section1h2"
+      >
+        Bryg din yndlingskaffe derhjemme
+      </h2>
+      <hr class="border-grå-50 border" id="section1hr" />
 
-			<div
-				class="md:grid md:grid-cols-2 mb-5xl font-montserrat text-brun-50 text-p_mobil md:text-p_desk"
-			>
-				<div>
-					<p class="py-s p_lysegrå">
-						Perfekt til dig, der værdsætter en ren og balanceret kop
-						kaffe, hvor hver nuance får lov at træde frem. <br />
-					</p>
-					<p class="p_lysegrå">
-						Find din favorit blandt vores sortiment og oplev din
-						kaffe på et helt nyt niveau.
-					</p>
-					<div class="grid-cols-2 grid py-s">
-						<GronBorderButton>UDFORSK VORES KAFFE</GronBorderButton>
-						<a href="/abonner"><GronButton>ABONNER</GronButton></a>
-					</div>
-				</div>
-				<div>
-					<Image
-						src={kaffer}
-						alt="billeder af friske kaffebønner"
-						class="md:w-1/2 md:w-1/2 md:top-[990px] md:right-[100px] md:absolute md:object-cover md:z-20"
-					/>
-				</div>
-			</div>
-		</section>
-		<section
-			class="bg-rød-500 md:py-xl md:px-2xl reletive z-10 px-md pt-md"
-		>
-			<h4
-				class="uppercase font-khand text-h4_mobil md:text-h4_desk text-brun-50"
-			>
-				Abonnement
-			</h4>
-			<h2
-				class="uppercase font-khand text-h2_mobil md:text-h2_desk text-brun-50 font-bold"
-			>
-				Få lækker kaffe leveret lige til døren
-			</h2>
-			<hr class="border-grå-50 border" />
+      <div
+        class="md:grid md:grid-cols-2 mb-5xl font-montserrat text-brun-50 text-p_mobil md:text-p_desk"
+      >
+        <div id="section1p">
+          <p class="py-s p_lysegrå">
+            Perfekt til dig, der værdsætter en ren og balanceret kop kaffe, hvor
+            hver nuance får lov at træde frem. <br />
+          </p>
+          <p class="p_lysegrå">
+            Find din favorit blandt vores sortiment og oplev din kaffe på et
+            helt nyt niveau.
+          </p>
+          <div class="flex-row flex gap-8 py-s">
+            <GronBorderButton>UDFORSK VORES KAFFE</GronBorderButton>
+            <a href="/abonner"><GronButton>ABONNER</GronButton></a>
+          </div>
+        </div>
+        <div>
+          <Image
+            src={kaffer}
+            alt="billeder af friske kaffebønner"
+            class="md:w-1/2 md:w-1/2 md:top-[950px] md:right-[50px] md:absolute md:object-cover md:z-20"
+          />
+        </div>
+      </div>
+    </section>
 
-			<div
-				class="md:grid md:grid-cols-2 mb-5xl font-montserrat text-brun-50 text-p_mobil md:text-p_desk"
-			>
-				<div>
-					<div class="grid-cols-2 grid py-s">
-						<a href="/abonner"> <RodButton>ABONNER</RodButton></a>
-						<a href="/shop"
-							><RodBorderButton>
-								UDFORSK VORES KAFFE
-							</RodBorderButton></a
-						>
-					</div>
-				</div>
-				<div>
-					<Image
-						src={kaffeflyver}
-						alt="billeder af friske kaffebønner"
-						class="md:w-2/5 md:w-2/5 md:top-[1790px] md:right-[100px] md:absolute md:object-cover md:z-20"
-					/>
-				</div>
-			</div>
-		</section>
-		<section
-			class="grid justify-items-center md:py-md mx-md mb-xl md:mb-2xl"
-		>
-			<Image src={steps} alt="billeder af friske kaffebønner" />
-		</section>
-		<section class="bg-blå-50 md:py-xl md:px-2xl px-md py-s">
-			<h4
-				class="uppercase font-khand text-h4_mobil md:text-h4_desk text-blå-500"
-			>
-				Coffee collective
-			</h4>
-			<h2
-				class="uppercase font-khand text-h2_mobil md:text-h2_desk text-blå-500 font-bold"
-			>
-				HVEM ER COFFEE COLLECTIVE
-			</h2>
-			<hr class="border-blå-500 border" />
-			<div
-				class="md:grid md:grid-cols-2 gap-20 font-montserrat p_blå text-p_mobil md:text-p_desk"
-			>
-				<div>
-					<p class="py-s">
-						Hos Coffee Collective leverer vi kaffe af højeste
-						kvalitet med fokus på bæredygtighed og etisk handel. Vi
-						samarbejder direkte med kaffefarmere for at sikre både
-						enestående smag og arbejdsbetingelser.
-					</p>
-					<p>
-						Hver dag rister vi kaffen frisk for at bevare dens
-						unikke smagsnuancer. Gennem gennemsigtighed i processen
-						– fra bønne til kop – inviterer vi dig til at opleve
-						nordisk kaffekultur på et nyt niveau.
-					</p>
-					<div class="grid-cols-2 grid py-s">
-						<a href="/omos"><BlaButton>LÆS MERE</BlaButton></a>
-					</div>
-				</div>
-				<div>
-					<Image
-						src={ansatte}
-						alt="billeder af friske kaffebønner"
-						class="py-s h-4/5 object-cover"
-					/>
-				</div>
-			</div>
-		</section>
-		<section class="bg-grøn-200 md:py-xl md:px-2xl px-md py-s reletive">
-			<h4
-				class="uppercase font-khand text-h4_mobil md:text-h4_desk text-grå-900"
-			>
-				BÆREDYGTIGHED
-			</h4>
-			<h2 class="uppercase text-h2_mobil md:text-h2_desk font-khand">
-				Fra bønne til kop: En bæredygtig rejse
-			</h2>
+    <section class="bg-rød-500 pb-xs md:px-2xl z-10 px-md pt-xl">
+      <h4
+        class="uppercase font-khand text-h4_mobil md:text-h4_desk text-brun-50 pt-md"
+        id="section2h4"
+      >
+        Abonnement
+      </h4>
+      <h2
+        class="uppercase font-khand text-h2_mobil md:text-h2_desk text-brun-50 font-bold relative z-40"
+        id="section2h2"
+      >
+        Få lækker kaffe leveret lige til døren
+      </h2>
+      <hr class="border-grå-50 border" id="section2hr" />
 
-			<hr class="border-grå-900 border" />
+      <div
+        class="md:grid md:grid-cols-2 mb-5xl font-montserrat text-brun-50 text-p_mobil md:text-p_desk"
+      >
+        <div id="section2knap">
+          <div class="flex-row flex py-s gap-8">
+            <a href="/abonner"> <RodButton>ABONNER</RodButton></a>
+            <a href="/shop"
+              ><RodBorderButton> UDFORSK VORES KAFFE </RodBorderButton></a
+            >
+          </div>
+        </div>
+        <div>
+          <Image
+            src={kaffeflyver}
+            alt="billeder af friske kaffebønner"
+            class="md:w-2/5 md:w-2/5 md:top-[1760px] md:right-[100px] md:absolute md:object-cover md:z-20"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="grid justify-items-center md:py-md mx-md mb-xl md:mb-2xl">
+      <Image src={steps} alt="billeder af friske kaffebønner" />
+    </section>
+    <section class="bg-blå-50 md:py-xl md:px-2xl px-md py-s">
+      <h4
+        class="uppercase font-khand text-h4_mobil md:text-h4_desk text-blå-500"
+      >
+        Coffee collective
+      </h4>
+      <h2
+        class="uppercase font-khand text-h2_mobil md:text-h2_desk text-blå-500 font-bold"
+      >
+        HVEM ER COFFEE COLLECTIVE
+      </h2>
+      <hr class="border-blå-500 border" />
+      <div
+        class="md:grid md:grid-cols-2 gap-20 font-montserrat p_blå text-p_mobil md:text-p_desk"
+      >
+        <div>
+          <p class="py-s">
+            Hos Coffee Collective leverer vi kaffe af højeste kvalitet med fokus
+            på bæredygtighed og etisk handel. Vi samarbejder direkte med
+            kaffefarmere for at sikre både enestående smag og
+            arbejdsbetingelser.
+          </p>
+          <p>
+            Hver dag rister vi kaffen frisk for at bevare dens unikke
+            smagsnuancer. Gennem gennemsigtighed i processen – fra bønne til kop
+            – inviterer vi dig til at opleve nordisk kaffekultur på et nyt
+            niveau.
+          </p>
+          <div class="grid-cols-2 grid py-s">
+            <a href="/omos"><BlaButton>LÆS MERE</BlaButton></a>
+          </div>
+        </div>
+        <div>
+          <Image
+            src={ansatte}
+            alt="billeder af friske kaffebønner"
+            class="py-s h-4/5 object-cover"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="bg-grøn-200 md:py-xl md:px-2xl px-md py-s reletive">
+      <h4
+        class="uppercase font-khand text-h4_mobil md:text-h4_desk text-grå-900"
+      >
+        BÆREDYGTIGHED
+      </h4>
+      <h2 class="uppercase text-h2_mobil md:text-h2_desk font-khand">
+        Fra bønne til kop: En bæredygtig rejse
+      </h2>
 
-			<div
-				class="md:grid md:grid-cols-2 gap-10 font-montserrat text-grå-900 text-p_mobil md:text-p_desk"
-			>
-				<Image
-					src={farm}
-					alt="billeder af kvinde der plukker bønner fra kaffeplanter"
-					class="h-[600px] w-full object-cover mt-s"
-				/>
-				<div>
-					<p class="mt-s p_grå">
-						Hos Coffee Collective skaber vi kaffeoplevelser i
-						verdensklasse med fokus på bæredygtighed og direkte
-						handel. Som B Corp-certificeret prioriterer vi sociale
-						og miljømæssige forbedringer, rister frisk kaffe dagligt
-						og gør en positiv forskel – fra bønne til kop.
-					</p>
+      <hr class="border-grå-900 border" />
 
-					<div class="grid-cols-2 grid py-s pt-md">
-						<GronButton>LÆS MERE</GronButton>
-					</div>
-					<div class="grid md:grid-cols-3 gap-10 pt-[47px]">
-						<Image
-							src={farmer4}
-							alt="billeder af fra farmen"
-							class="md:object-cover md:z-20"
-						/>
-						<Image
-							src={farmer3}
-							alt="billeder af fra farmen"
-							class="h-full md:object-cover md:z-20"
-						/>
-						<Image
-							src={farmer2}
-							alt="billeder af fra farmen"
-							class="h-full md:object-cover md:z-20"
-						/>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="md:m-xl text-blå-600 px-md md:px-xl pt-md">
-			<div class="md:grid md:grid-cols-3 gap-40">
-				<div class="md:col-span-2">
-					<h2
-						class="uppercase text-h2_mobil md:text-h2_desk font-khand font-bold"
-					>
-						NYHEDSBREV
-					</h2>
-					<p
-						class="font-montserrat p_blå text-p_mobil md:text-p_desk pt-xs pr-md md:pr-5xl"
-					>
-						Få de seneste kaffelanceringer før alle andre og kom
-						tættere på farmerne med unikke fortællinger fra deres
-						hverdag.
-					</p>
-					<div class="">
-						<form class="py-md grid grid-cols-2 gap-8">
-							<!-- Email input -->
-							<div>
-								<label
-									for="email"
-									class="block text-sm font-montserrat font-medium text-gray-900"
-								></label>
-								<input
-									type="email"
-									id="email"
-									class="w-full p-4 bg-blå-100 text-gray-900 font-montserrat outline-none border-none focus:outline-none focus:border-none focus:ring-0"
-									placeholder="E-mail"
-								/>
-							</div>
-							<div class="">
-								<a href="/logind">
-									<BlaButton>TILMELD</BlaButton>
-								</a>
-							</div>
-						</form>
-					</div>
-				</div>
-				<div class="hidden md:block">
-					<svg
-						width="253"
-						height="293"
-						viewBox="0 0 253 293"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<rect
-							x="253"
-							y="144.603"
-							width="66.9059"
-							height="41.7999"
-							transform="rotate(90 253 144.603)"
-							fill="#4060A0"></rect>
-						<ellipse
-							cx="31.8268"
-							cy="25.2998"
-							rx="31.8268"
-							ry="25.2998"
-							transform="matrix(0.0184303 0.99983 -0.999843 0.0177378 240.835 145.831)"
-							fill="#FCFAF7"></ellipse>
-						<rect
-							x="0.000488281"
-							y="124.1"
-							width="216.7"
-							height="97.1215"
-							fill="#4060A0"></rect>
-						<ellipse
-							cx="109.458"
-							cy="204.497"
-							rx="97.6606"
-							ry="79.9637"
-							fill="#FCFAF7"></ellipse>
-						<rect
-							x="63.8003"
-							y="221.221"
-							width="87.9998"
-							height="70.1433"
-							fill="#4060A0"></rect>
-						<path
-							d="M97.005 221.539L64.3499 290.467L-8.1104e-05 220.675L97.005 221.539Z"
-							fill="#4060A0"></path>
-						<path
-							d="M121.001 221.221L150.756 291.481L216.7 221.221L121.001 221.221Z"
-							fill="#4060A0"></path>
-						<path
-							d="M79.2002 0C91.9579 0 102.3 10.3422 102.3 23.1V28.6982C102.3 41.4559 91.9579 51.7981 79.2002 51.7981V0Z"
-							fill="#4060A0"></path>
-						<path
-							d="M128.7 0C141.458 0 151.8 10.3422 151.8 23.1V28.6982C151.8 41.4559 141.458 51.7981 128.7 51.7981V0Z"
-							fill="#4060A0"></path>
-						<path
-							d="M79.2002 51.7981C66.4424 51.7981 56.1002 62.1403 56.1002 74.8981V80.4963C56.1002 93.254 66.4424 103.596 79.2002 103.596V51.7981Z"
-							fill="#4060A0"></path>
-						<path
-							d="M128.7 51.7981C115.942 51.7981 105.6 62.1403 105.6 74.8981V80.4963C105.6 93.254 115.942 103.596 128.7 103.596V51.7981Z"
-							fill="#4060A0"></path>
-					</svg>
-				</div>
-			</div>
-		</section>
-	</article>
+      <div
+        class="md:grid md:grid-cols-2 gap-10 font-montserrat text-grå-900 text-p_mobil md:text-p_desk"
+      >
+        <Image
+          src={farm}
+          alt="billeder af kvinde der plukker bønner fra kaffeplanter"
+          class="h-[600px] w-full object-cover mt-s"
+        />
+        <div>
+          <p class="mt-s p_grå">
+            Hos Coffee Collective skaber vi kaffeoplevelser i verdensklasse med
+            fokus på bæredygtighed og direkte handel. Som B Corp-certificeret
+            prioriterer vi sociale og miljømæssige forbedringer, rister frisk
+            kaffe dagligt og gør en positiv forskel – fra bønne til kop.
+          </p>
+
+          <div class="grid-cols-2 grid py-s pt-md">
+            <GronButton>LÆS MERE</GronButton>
+          </div>
+          <div class="grid md:grid-cols-3 gap-10 pt-[47px]">
+            <Image
+              src={farmer4}
+              alt="billeder af fra farmen"
+              class="md:object-cover md:z-20"
+            />
+            <Image
+              src={farmer3}
+              alt="billeder af fra farmen"
+              class="h-full md:object-cover md:z-20"
+            />
+            <Image
+              src={farmer2}
+              alt="billeder af fra farmen"
+              class="h-full md:object-cover md:z-20"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="md:m-xl text-blå-600 px-md md:px-xl pt-xs pb-md">
+      <div class="md:grid md:grid-cols-3 gap-40">
+        <div class="md:col-span-2">
+          <h2
+            class="uppercase text-h2_mobil md:text-h2_desk font-khand font-bold"
+          >
+            NYHEDSBREV
+          </h2>
+          <p
+            class="font-montserrat p_blå text-p_mobil md:text-p_desk pt-xs pr-md md:pr-5xl"
+          >
+            Få de seneste kaffelanceringer før alle andre og kom tættere på
+            farmerne med unikke fortællinger fra deres hverdag.
+          </p>
+          <div class="">
+            <form class="py-md grid grid-cols-2 gap-8">
+              <!-- Email input -->
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-montserrat font-medium text-gray-900"
+                ></label>
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full p-4 bg-blå-100 text-gray-900 font-montserrat outline-none border-none focus:outline-none focus:border-none focus:ring-0"
+                  placeholder="E-mail"
+                />
+              </div>
+              <div class="">
+                <a href="/logind">
+                  <BlaButton>TILMELD</BlaButton>
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="hidden md:block">
+          <svg
+            width="253"
+            height="293"
+            viewBox="0 0 253 293"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="253"
+              y="144.603"
+              width="66.9059"
+              height="41.7999"
+              transform="rotate(90 253 144.603)"
+              fill="#4060A0"></rect>
+            <ellipse
+              cx="31.8268"
+              cy="25.2998"
+              rx="31.8268"
+              ry="25.2998"
+              transform="matrix(0.0184303 0.99983 -0.999843 0.0177378 240.835 145.831)"
+              fill="#FCFAF7"></ellipse>
+            <rect
+              x="0.000488281"
+              y="124.1"
+              width="216.7"
+              height="97.1215"
+              fill="#4060A0"></rect>
+            <ellipse
+              cx="109.458"
+              cy="204.497"
+              rx="97.6606"
+              ry="79.9637"
+              fill="#FCFAF7"></ellipse>
+            <rect
+              x="63.8003"
+              y="221.221"
+              width="87.9998"
+              height="70.1433"
+              fill="#4060A0"></rect>
+            <path
+              d="M97.005 221.539L64.3499 290.467L-8.1104e-05 220.675L97.005 221.539Z"
+              fill="#4060A0"></path>
+            <path
+              d="M121.001 221.221L150.756 291.481L216.7 221.221L121.001 221.221Z"
+              fill="#4060A0"></path>
+            <path
+              d="M79.2002 0C91.9579 0 102.3 10.3422 102.3 23.1V28.6982C102.3 41.4559 91.9579 51.7981 79.2002 51.7981V0Z"
+              fill="#4060A0"></path>
+            <path
+              d="M128.7 0C141.458 0 151.8 10.3422 151.8 23.1V28.6982C151.8 41.4559 141.458 51.7981 128.7 51.7981V0Z"
+              fill="#4060A0"></path>
+            <path
+              d="M79.2002 51.7981C66.4424 51.7981 56.1002 62.1403 56.1002 74.8981V80.4963C56.1002 93.254 66.4424 103.596 79.2002 103.596V51.7981Z"
+              fill="#4060A0"></path>
+            <path
+              d="M128.7 51.7981C115.942 51.7981 105.6 62.1403 105.6 74.8981V80.4963C105.6 93.254 115.942 103.596 128.7 103.596V51.7981Z"
+              fill="#4060A0"></path>
+          </svg>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <script>
+    import { inView } from "motion";
+
+    // <-- animation section 1 -->
+    // <-- inview section1 h2 -->
+    const section1h2Fadeup = document.querySelector("#section1h2");
+
+    inView(section1h2Fadeup, () => {
+      section1h2Fadeup.classList.add(
+        "animate__animated",
+        "animate__fadeInUpBig"
+      );
+    });
+
+    // <-- inview section1 h4 -->
+    const section1h4Fadeup = document.querySelector("#section1h4");
+
+    inView(section1h4Fadeup, () => {
+      section1h4Fadeup.classList.add(
+        "animate__animated",
+        "animate__fadeInUpBig"
+      );
+    });
+
+    // <-- inview section1 hr -->
+    const section1hrFadeup = document.querySelector("#section1hr");
+
+    inView(section1hrFadeup, () => {
+      section1hrFadeup.classList.add(
+        "animate__animated",
+        "animate__fadeInUpBig"
+      );
+    });
+
+    // <-- inview section1 p -->
+    const section1pFadeup = document.querySelector("#section1p");
+
+    inView(section1pFadeup, () => {
+      section1pFadeup.classList.add(
+        "animate__animated",
+        "animate__fadeInUpBig"
+      );
+    });
+
+    // <-- animation section 2 -->
+    // <-- inview section2 h2 -->
+    const section2h2Fadeup = document.querySelector("#section2h2");
+
+    inView(section2h2Fadeup, () => {
+      section2h2Fadeup.classList.add(
+        "animate__animated",
+        "animate__fadeInUpBig"
+      );
+    });
+
+    // <-- inview section2 h4 -->
+    const section2h4Fadeup = document.querySelector("#section2h4");
+
+    inView(section2h4Fadeup, () => {
+      section2h4Fadeup.classList.add(
+        "animate__animated",
+        "animate__fadeInUpBig"
+      );
+    });
+
+    // <-- inview section2 hr -->
+    const section2hrFadeup = document.querySelector("#section2hr");
+
+    inView(section2hrFadeup, () => {
+      section2hrFadeup.classList.add(
+        "animate__animated",
+        "animate__fadeInUpBig"
+      );
+    });
+
+    // <-- inview section2 knap -->
+    const section2knapFadeup = document.querySelector("#section2knap");
+
+    inView(section2knapFadeup, () => {
+      section2knapFadeup.classList.add(
+        "animate__animated",
+        "animate__fadeInUpBig"
+      );
+    });
+  </script>
 </MainLayout>
