@@ -4,12 +4,13 @@
 
 <div>
   <button
-    class="relative border border-brun-50 text-brun-50 text-h4_mobil md:text-h4_desk font-khand px-s py-xxs overflow-hidden group hover:border-transparent"
+    class="relative flex items-center border border-brun-50 text-brun-50 text-h4_mobil md:text-h4_desk font-khand px-s py-xxs overflow-hidden group hover:border-transparent"
   >
     <span
       class="relative z-10 transition-colors duration-300 group-hover:text-grå-50"
-      ><slot /></span
     >
+      <slot />
+    </span>
     <span
       class="absolute inset-0 bg-grå-900 transition-all duration-300 transform scale-x-0 group-hover:scale-x-100 origin-left z-0"
     ></span>

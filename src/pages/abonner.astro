@@ -7,34 +7,7 @@ import MorkBorderButton from "../components/MorkBorderButton.astro";
 ---
 
 <MainLayout title="Abonner">
-  <article class="relative px-md md:px-xl mt-md pb-xl overflow-hidden">
-    <!-- Baggrundsmønster med små trekanter i højre nederste trekant -->
-    <div class="absolute bottom-0 right-0 w-[80vw] h-[80vh] z-[-1]">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="xMidYMid slice"
-        class="w-full h-full opacity-40"
-      >
-        <defs>
-          <pattern
-            id="triangle-pattern"
-            width="10"
-            height="10"
-            patternUnits="userSpaceOnUse"
-          >
-            <polygon points="0,10 5,0 10,10" fill="#d4cbb8"></polygon>
-          </pattern>
-        </defs>
-        <!-- Afgrænser området til at være trekantet -->
-        <rect
-          width="100%"
-          height="100%"
-          fill="url(#triangle-pattern)"
-          clip-path="polygon(0% 100%, 100% 100%, 100% 0%)"></rect>
-      </svg>
-    </div>
-
+  <article class="px-md md:px-xl mt-md pb-xl overflow-hidden">
     <h1 class="h2_grå text-h2_mobil md:text-h2_desk">
       KVALITETSKAFFE DIREKTE TIL DØREN
     </h1>
@@ -67,7 +40,9 @@ import MorkBorderButton from "../components/MorkBorderButton.astro";
         </div>
 
         <div class="grid grid-cols-2 pb-md">
-          <MorkBorderButton>ABONNEMENT FAQ</MorkBorderButton>
+          <MorkBorderButton class="flex items-center space-x-2">
+            ABONNEMENT FAQ
+          </MorkBorderButton>
           <a href="/abonnement1"><Button>FIND ABONNEMENT</Button></a>
         </div>
       </div>
