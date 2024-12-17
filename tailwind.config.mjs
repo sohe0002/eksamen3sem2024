@@ -121,12 +121,12 @@ export default {
          h2_desk: ["58px", { lineHeight: "3.75rem" }],
          h1_desk: ["96px", { lineHeight: "4.5rem" }],
  
+         p_stormobil: ["14px", { lineHeight: "1.50rem" }],
          p_mobil: ["12px", { lineHeight: "1.50rem" }],
          p_lillemobil: ["10px", { lineHeight: "1.50rem" }],
-         p_stormobil: ["14px", { lineHeight: "1.50rem" }],
-         h4_mobil: ["14px", { lineHeight: "2.25rem" }],
-         h3_mobil: ["17px", { lineHeight: "3rem" }],
-         h2_mobil: ["24px", { lineHeight: "" }],
+         h4_mobil: ["18px", { lineHeight: "2.25rem" }],
+         h3_mobil: ["24px", { lineHeight: "3rem" }],
+         h2_mobil: ["32px", { lineHeight: "" }],
          h1_mobil: ["48px", { lineHeight: "4.5rem" }],
        },
  
