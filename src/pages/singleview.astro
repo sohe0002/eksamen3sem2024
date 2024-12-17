@@ -15,13 +15,35 @@ import silvia from "../assets/images/silvia.webp";
 
 <MainLayout>
   <article class="bg-brun-50">
-    <section class="grid lg:grid-cols-2">
+    <hr
+      class="border-rød-400 border-2 mx-auto hidden md:block absolute md:top-[240px] z-30 w-full"
+    />
+
+    <a href="/shop" class="block ml-s">
+      <svg
+        class="block md:hidden"
+        width="40"
+        height="40"
+        viewBox="0 0 51 51"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect x="0.5" y="0.5" width="50" height="50" rx="25" fill="#F8F2F2"
+        ></rect>
+        <rect x="0.5" y="0.5" width="50" height="50" rx="25" stroke="#975357"
+        ></rect>
+        <path d="M33 18L18 25.5L33 33" stroke="#975357" stroke-width="1.5"
+        ></path>
+      </svg>
+    </a>
+
+    <section class="grid lg:grid-cols-2 mt-md relative z-20">
       <!-- Venstre kolonne -->
       <div class="flex flex-col justify-between">
         <div>
           <div class="lg:flex relative">
             <h1
-              class="font-montserrat text-h1_mobil text-center lg:text-left lg:text-h1_desk h1_grå mx-md lg:mx-xl lg:pb-xxs"
+              class="text-h1_mobil text-center lg:text-left lg:text-h1_desk h1_grå mx-md lg:mx-xl lg:pb-xxs"
             >
               BEKELE
             </h1>
@@ -29,23 +51,23 @@ import silvia from "../assets/images/silvia.webp";
             <Image
               src={Bekele}
               alt="billede af bekele kaffen"
-              class="w-auto h-[350px] grid mx-auto lg:hidden mx-md lg:mx-xl -mt-[175px] relative z-10"
+              class="w-auto h-[350px] grid mx-auto lg:hidden lg:mx-xl -mt-[175px] relative z-10"
             />
             <h2
-              class="font-montserrat lg:text-p_desk h2_grå grid content-end mx-md lg:mx-xl"
+              class="lg:text-p_lilledesk p_grå grid content-end mx-md lg:mx-xl"
             >
               Sidama, Ethiopia
             </h2>
           </div>
-          <hr class="border-rød-400 border-2 hidden lg:block" />
+
           <p
-            class="text-p_stormobil md:text-h4_desk uppercase font-montserrat mx-md lg:mx-xl lg:text-p_desk lg:pt-xxs p_grå"
+            class="text-p_stormobil md:text-p_lilledesk uppercase mx-md lg:mx-xl lg:pt-xxs p_grå font-medium"
           >
             Sød, frisk og fyldig. <br class="lg:hidden" /> Aroma af jordbærslik,
-            ananas og papaya.
+            ananas og papaya
           </p>
-          <div class="grid grid-cols-2 py-s mx-md lg:mx-xl lg:my-md lg:mr-3xl">
-            <div class="font-montserrat text-p_mobil p_rød lg:text-p_lilledesk">
+          <div class="grid grid-cols-2 py-s mx-md md:mx-xl lg:my-md lg:mr-xl">
+            <div class="text-p_mobil p_rød lg:text-p_lilledesk">
               <p>PRODUCERET SAMMEN MED</p>
               <p>KVALITETSBONUS</p>
               <p>VARIANTER</p>
@@ -181,13 +203,13 @@ import silvia from "../assets/images/silvia.webp";
         <!-- Navigation buttons -->
         <button
           id="prev"
-          class="absolute top-96 right-20 transform -translate-y-1/2 bg-white p-2 lg:p-2 lg:px-6 lg:text-p_stordesk px-4 rounded-full shadow-md bg-brun-50 text-rød-700 lg:top-[80%] lg:right-40"
+          class="absolute top-96 right-20 transform -translate-y-1/2 p-2 lg:p-2 lg:px-6 lg:text-p_stordesk px-4 rounded-full shadow-md border border-2 border-rød-700 bg-brun-50 text-rød-700 lg:top-[80%] lg:right-40"
         >
           &#x3c; <!-- Left arrow -->
         </button>
         <button
           id="next"
-          class="absolute top-96 right-2 transform -translate-y-1/2 bg-white p-2 px-4 lg:p-2 lg:px-6 lg:text-p_stordesk rounded-full shadow-md bg-brun-50 text-rød-700 mr-xxs lg:top-[80%] lg:right-16"
+          class="absolute top-96 right-2 transform -translate-y-1/2 p-2 px-4 lg:p-2 lg:px-6 lg:text-p_stordesk rounded-full shadow-md border border-2 border-rød-700 bg-brun-50 text-rød-700 mr-xxs lg:top-[80%] lg:right-16"
         >
           &#x3e; <!-- Right arrow -->
         </button>
