@@ -16,16 +16,18 @@ const {
 
 <section class="relative text-center max-w-72 lg:max-w-96 lg:pb-xl group">
   <div class="relative">
-    <img
-      src={cardimage}
-      alt={cardimagealt}
-      class="h-[400px] w-full object-contain"
-    />
+    <a href="/singleview">
+      <img
+        src={cardimage}
+        alt={cardimagealt}
+        class="h-[400px] w-full object-contain"
+      />
+    </a>
     <p class="p_grå lg:text-p_stordesk lg:mt-4 lg:pb-6">
       {kaffenavn}
     </p>
     <p class="p_grå lg:hidden text-p_lilledesk mt-4 pb-6">
-      {pris}"
+      {pris}
     </p>
     <!-- Overlay -->
     <div
