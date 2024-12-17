@@ -65,6 +65,14 @@
     @apply font-khand text-grå-900;
   }
 
+
+  .h1_lysgrå,
+  .h2_lysgrå,
+  .h3_lysgrå,
+  .h4_lysgrå {
+    @apply font-khand text-grå-50;
+  }
+
   .h1_rød,
   .h2_rød {
     @apply font-khand text-rød-900;
