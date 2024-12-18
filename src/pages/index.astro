@@ -173,7 +173,7 @@ import "motion";
           <div class="flex-row flex py-s gap-8">
             <a href="/abonner"> <RodButton>ABONNER</RodButton></a>
             <a href="/shop"
-              ><RodBorderButton> UDFORSK VORES KAFFE </RodBorderButton></a
+              ><RodBorderButton>UDFORSK VORES KAFFE</RodBorderButton></a
             >
           </div>
         </div>
@@ -428,12 +428,10 @@ import "motion";
       </div>
     </section>
     <section class="bg-grøn-200 md:py-xl md:px-2xl px-md py-s reletive">
-      <h4
-        class="uppercase font-khand text-h4_mobil md:text-h4_desk text-grå-900"
-      >
+      <h4 class="uppercase text-h4_mobil md:text-h4_desk h4_grå">
         BÆREDYGTIGHED
       </h4>
-      <h2 class="uppercase text-h2_mobil md:text-h2_desk font-khand">
+      <h2 class="uppercase text-h2_mobil md:text-h2_desk h2_grå">
         Fra bønne til kop: En bæredygtig rejse
       </h2>
 
@@ -1087,7 +1085,7 @@ import "motion";
     inView(section1h2Fadeup, () => {
       section1h2Fadeup.classList.add(
         "animate__animated",
-        "animate__fadeInUpBig"
+        "animate__fadeInUpBig",
       );
     });
 
@@ -1097,7 +1095,7 @@ import "motion";
     inView(section1h4Fadeup, () => {
       section1h4Fadeup.classList.add(
         "animate__animated",
-        "animate__fadeInUpBig"
+        "animate__fadeInUpBig",
       );
     });
 
@@ -1107,7 +1105,7 @@ import "motion";
     inView(section1hrFadeup, () => {
       section1hrFadeup.classList.add(
         "animate__animated",
-        "animate__fadeInUpBig"
+        "animate__fadeInUpBig",
       );
     });
 
@@ -1117,7 +1115,7 @@ import "motion";
     inView(section1pFadeup, () => {
       section1pFadeup.classList.add(
         "animate__animated",
-        "animate__fadeInUpBig"
+        "animate__fadeInUpBig",
       );
     });
 
@@ -1128,7 +1126,7 @@ import "motion";
     inView(section2h2Fadeup, () => {
       section2h2Fadeup.classList.add(
         "animate__animated",
-        "animate__fadeInUpBig"
+        "animate__fadeInUpBig",
       );
     });
 
@@ -1138,7 +1136,7 @@ import "motion";
     inView(section2h4Fadeup, () => {
       section2h4Fadeup.classList.add(
         "animate__animated",
-        "animate__fadeInUpBig"
+        "animate__fadeInUpBig",
       );
     });
 
@@ -1148,7 +1146,7 @@ import "motion";
     inView(section2hrFadeup, () => {
       section2hrFadeup.classList.add(
         "animate__animated",
-        "animate__fadeInUpBig"
+        "animate__fadeInUpBig",
       );
     });
 
@@ -1158,7 +1156,7 @@ import "motion";
     inView(section2knapFadeup, () => {
       section2knapFadeup.classList.add(
         "animate__animated",
-        "animate__fadeInUpBig"
+        "animate__fadeInUpBig",
       );
     });
   </script>
@@ -1172,7 +1170,7 @@ import "motion";
         animate(
           `.mangeelementer${i}`,
           { x: [-2000 + i * 50, 0], y: [-50 + i * 10, 0] },
-          { duration: 1 + (i % 3) }
+          { duration: 1 + (i % 3) },
         );
       }
     });
