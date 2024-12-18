@@ -7,6 +7,8 @@ const {
   cardimage = "",
   cardimagealt = "",
 
+  badgeudsolgt = "false",
+
   kaffenavn = "",
   smag = "",
   pris = "",
@@ -22,6 +24,14 @@ const {
         alt={cardimagealt}
         class="h-[400px] w-full object-contain"
       />
+
+      {
+        badgeudsolgt === "true" && (
+          <div class="badge absolute ml-s px-s top-lg bg-grøn-600 p-xs p_lysgrå">
+            UDSOLGT
+          </div>
+        )
+      }
     </a>
     <p class="p_grå lg:text-p_stordesk lg:mt-4 lg:pb-6">
       {kaffenavn}

@@ -5,16 +5,17 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 <MainLayout title="Coffee Collective">
   <article class="">
-    <section class="py-s md:py-xl md:px-xl px-md">
+    <section class="py-s md:pt-xl md:px-xl px-md">
+      <h1 class="text-h2_mobil md:text-h2_desk pb-lg h3_grå">VORES KAFFE</h1>
       <div class="flex">
         <a
           href="#filter-section"
-          class="text-h2_mobil font-khand uppercase pr-s md:pr-s lg:text-h3_desk hover:font-medium h2_grå"
+          class="text-h3_mobil font-khand uppercase pr-s md:pr-s lg:text-h3_desk hover:font-medium h2_grå"
           >Filter</a
         >
         <a
           href="#espresso-section"
-          class="text-h2_mobil md:px-xs md:text-h3_desk font-khand uppercase hover:font-medium h2_grå"
+          class="text-h3_mobil md:px-xs md:text-h3_desk font-khand uppercase hover:font-medium h2_grå"
           >Espresso</a
         >
       </div>
@@ -32,6 +33,7 @@ import MainLayout from "../layouts/MainLayout.astro";
         <Card_shop
           cardimage="/bekele.webp"
           cardimagealt="Bekele"
+          badgeudsolgt="true"
           kaffenavn="Bekele"
           info="Anaerobic Natural"
           smag="Sød og fyldig"
@@ -41,7 +43,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 
         <Card_shop
           cardimage="/aga.webp"
-          cardimagealt="Aga"
+          cardimagealt="Aga kaffepose"
           kaffenavn="Aga"
           info=""
           smag="Let og elegant med forfriskende syre"
@@ -49,7 +51,7 @@ import MainLayout from "../layouts/MainLayout.astro";
         />
         <Card_shop
           cardimage="/gichathaini.webp"
-          cardimagealt="Gichathaini"
+          cardimagealt="Gichathaini kaffepose"
           kaffenavn="Gichathaini"
           info=""
           smag="Frisk, sød og frugtig"
@@ -57,7 +59,7 @@ import MainLayout from "../layouts/MainLayout.astro";
         />
         <Card_shop
           cardimage="/julekaffe.webp"
-          cardimagealt="julekaffe"
+          cardimagealt="julekaffe kaffepose"
           kaffenavn="Julekaffe Perez"
           info="Økologisk"
           smag="Ren og elegant med god sødme"
@@ -65,7 +67,7 @@ import MainLayout from "../layouts/MainLayout.astro";
         />
         <Card_shop
           cardimage="/kieni.webp"
-          cardimagealt="kieni"
+          cardimagealt="kieni kaffepose"
           kaffenavn="Kieni"
           info=""
           smag="Sød og fyldig med aroma af solbær"
@@ -73,7 +75,7 @@ import MainLayout from "../layouts/MainLayout.astro";
         />
         <Card_shop
           cardimage="/silvia.webp"
-          cardimagealt="silvia"
+          cardimagealt="silvia kaffepose"
           kaffenavn="Silvia"
           info="Økologisk"
           smag="Fyldig og sød"
@@ -81,7 +83,7 @@ import MainLayout from "../layouts/MainLayout.astro";
         />
         <Card_shop
           cardimage="/takesi.webp"
-          cardimagealt="takesi"
+          cardimagealt="takesi kaffepose"
           kaffenavn="Takesi Gesha"
           info="Max 10 poser pr. kunde"
           smag="Elegant, fyldig og utrolig sød"
@@ -89,7 +91,7 @@ import MainLayout from "../layouts/MainLayout.astro";
         />
         <Card_shop
           cardimage="/vista.webp"
-          cardimagealt="vista"
+          cardimagealt="vista kaffepose"
           kaffenavn="Vista Hermosa"
           info=""
           smag="Frisk, sød og cremet"
@@ -108,7 +110,7 @@ import MainLayout from "../layouts/MainLayout.astro";
       >
         <Card_shop
           cardimage="/aga_es.webp"
-          cardimagealt="aga espresso"
+          cardimagealt="aga espresso kaffepose"
           kaffenavn="Aga Espresso"
           info="Økologisk"
           smag="Ren og frisk espresso"
@@ -116,7 +118,7 @@ import MainLayout from "../layouts/MainLayout.astro";
         />
         <Card_shop
           cardimage="/vista_es.webp"
-          cardimagealt="vista espresso"
+          cardimagealt="vista espresso kaffepose"
           kaffenavn="Vista Hermosa Espresso"
           info=""
           smag="Sød og ren espresso"
@@ -124,7 +126,7 @@ import MainLayout from "../layouts/MainLayout.astro";
         />
         <Card_shop
           cardimage="/kieni_es.webp"
-          cardimagealt="kieni espresso"
+          cardimagealt="kieni espresso kaffepose"
           kaffenavn="Kieni Espresso"
           info=""
           smag="Syrlig og olieret espresso"
@@ -132,7 +134,7 @@ import MainLayout from "../layouts/MainLayout.astro";
         />
         <Card_shop
           cardimage="/blend_es.webp"
-          cardimagealt="espresso blend"
+          cardimagealt="espresso blend kaffepose"
           kaffenavn="Espresso Blend"
           info="35% Jose + 35% Vista Hermosa + 30% Reshad"
           smag="Fyldig, sød og cremet espresso"

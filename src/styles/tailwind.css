@@ -52,7 +52,7 @@
   }
 
   .p_blå {
-    @apply font-montserrat text-blå-500;
+    @apply font-montserrat text-blå-700;
   }
   .p_rød {
     @apply font-montserrat text-rød-500;
@@ -64,7 +64,6 @@
   .h4_grå {
     @apply font-khand text-grå-900;
   }
-
 
   .h1_lysgrå,
   .h2_lysgrå,
