@@ -11,6 +11,7 @@ import bekeleslide3 from "../assets/images/bekeleslide3.webp";
 import kaffeguide from "../assets/images/kaffeguide.webp";
 import kieni_es from "../assets/images/kieni_es.webp";
 import silvia from "../assets/images/silvia.webp";
+import aga from "/public/aga.webp";
 ---
 
 <MainLayout title="Bekele">
@@ -126,7 +127,7 @@ import silvia from "../assets/images/silvia.webp";
           >
             KAFFEFARMEN
           </h2>
-          <p class="font-montserrat text-p_mobil p_grå mb-m lg:text-p_stordesk">
+          <p class="font-montserrat text-p_mobil p_grå mb-m lg:text-p_desk">
             Bekele Karchara driver flere små forarbejdningssteder af kaffe i det
             samme område. Det sted, vi arbejder med, er det højeste, hvor de
             dyrker og forarbejder kaffe i 2.350 meters højde i Murago-området i
@@ -165,7 +166,7 @@ import silvia from "../assets/images/silvia.webp";
             />
 
             <p
-              class="absolute bottom-4 left-4 p_lysgrå font-montserrat text-h2_mobile font-bold text-lg px-4 py-2 w-96 pl-lg lg:text-h2_desk lg:w-[1200px] lg:pl-[400px]"
+              class="absolute bottom-4 left-4 h2_lysgrå text-h2_mobile font-bold text-lg px-4 py-2 w-96 pl-lg lg:text-h2_desk lg:w-[1200px] lg:pl-[400px]"
             >
               Bønnerne bliver tørret på høje tørreborde
             </p>
@@ -179,7 +180,7 @@ import silvia from "../assets/images/silvia.webp";
             />
 
             <p
-              class="absolute bottom-4 left-4 p_lysgrå font-montserrat text-h2_mobile font-bold text-lg px-4 py-2 w-96 pl-lg lg:text-h2_desk lg:w-[1200px] lg:pl-[400px]"
+              class="absolute bottom-4 left-4 h2_lysgrå text-h2_mobile font-bold text-lg px-4 py-2 w-96 pl-lg lg:text-h2_desk lg:w-[1200px] lg:pl-[400px]"
             >
               Bekele Karchara viser os rundt på farmen
             </p>
@@ -193,7 +194,7 @@ import silvia from "../assets/images/silvia.webp";
             />
 
             <p
-              class="absolute bottom-4 left-4 p_lysgrå font-montserrat text-h2_mobile font-bold text-lg px-4 py-2 w-96 pl-lg lg:text-h2_desk lg:w-[1200px] lg:pl-[400px]"
+              class="absolute bottom-4 left-4 h2_lysgrå text-h2_mobile font-bold text-lg px-4 py-2 w-96 pl-lg lg:text-h2_desk lg:w-[1200px] lg:pl-[400px]"
             >
               Flere tørreborde, hvor der bliver sorteret bønner
             </p>
@@ -249,31 +250,37 @@ import silvia from "../assets/images/silvia.webp";
         </h2>
         <div class="grid grid-cols-2 lg:grid-cols-3 py-s gap-md">
           <div>
-            <Image
-              src={kieni_es}
-              alt="billede af bekele kaffen"
-              class="w-auto h-[300px] lg:h-[500px] object-cover"
-            />
+            <a href="/singleview">
+              <Image
+                src={kieni_es}
+                alt="billede af bekele kaffen"
+                class="w-auto h-[300px] lg:h-[500px] object-cover hover:scale-110"
+              />
+            </a>
             <p class="text-center font-montserrat lg:text-p_desk p_grå">
               Kieni
             </p>
           </div>
           <div>
-            <Image
-              src={silvia}
-              alt="billede af bekele kaffen"
-              class="w-auto h-[300px] lg:h-[500px] object-cover lg:block"
-            />
+            <a href="/singleview">
+              <Image
+                src={silvia}
+                alt="billede af bekele kaffen"
+                class="w-auto h-[300px] lg:h-[500px] object-cover lg:block hover:scale-110"
+              />
+            </a>
             <p class="text-center font-montserrat lg:text-p_desk p_grå">
               Silvia
             </p>
           </div>
           <div class="hidden lg:block">
-            <Image
-              src={silvia}
-              alt="billede af bekele kaffen"
-              class="w-auto h-[300px] lg:h-[500px] object-cover lg:block"
-            />
+            <a href="/singleview">
+              <Image
+                src={aga}
+                alt="billede af bekele kaffen"
+                class="w-auto h-[300px] lg:h-[500px] object-cover lg:block hover:scale-110"
+              />
+            </a>
             <p class="text-center font-montserrat lg:text-p_desk p_grå">Aga</p>
           </div>
         </div>
