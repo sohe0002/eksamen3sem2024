@@ -45,41 +45,6 @@ import Button from "../components/Button.astro";
         </div>
       </div>
       <div>
-        <p class="text-h4_mobil md:text-h4_desk font-bold h4_grå">
-          HVOR SKAL VI SENDE KAFFEN TIL?
-        </p>
-        <div class="flex justify-start gap-4 pt-xs md:pb-s">
-          <!-- DANMARK -->
-          <label class="cursor-pointer">
-            <input
-              type="radio"
-              name="region"
-              value="danmark"
-              class="peer hidden"
-            />
-            <div
-              class="border border-grå-900 hover:border-2 h4_grå text-h4_mobil md:text-h4_desk px-xs py-xxs peer-checked:bg-grøn-500 peer-checked:text-white peer-checked:border-grøn-500"
-            >
-              DANMARK
-            </div>
-          </label>
-
-          <!-- RESTEN AF VERDEN -->
-          <label class="cursor-pointer">
-            <input
-              type="radio"
-              name="region"
-              value="resten-af-verden"
-              class="peer hidden"
-            />
-            <div
-              class="border border-grå-900 hover:border-2 h4_grå text-h4_mobil md:text-h4_desk px-xs py-xxs peer-checked:bg-grøn-500 peer-checked:text-white peer-checked:border-grøn-500"
-            >
-              RESTEN AF VERDEN
-            </div>
-          </label>
-        </div>
-
         <p class="text-h4_mobil md:text-h4_desk font-bold h4_grå pt-xs md:pt-0">
           DIN KONTO HOS COFFEE COLLECTIVE
         </p>
@@ -91,11 +56,47 @@ import Button from "../components/Button.astro";
             ><BorderButton>OPRET KONTO</BorderButton></a
           >
         </div>
+
+        <div>
+          <p class="text-h4_mobil md:text-h4_desk font-bold h4_grå">
+            HVOR SKAL VI SENDE KAFFEN TIL?
+          </p>
+          <div class="flex justify-start gap-4 pt-xs md:pb-s">
+            <!-- DANMARK -->
+            <label class="cursor-pointer">
+              <input
+                type="radio"
+                name="region"
+                value="danmark"
+                class="peer hidden"
+              />
+              <div
+                class="border border-grå-900 hover:border-2 h4_grå text-h4_mobil md:text-h4_desk px-xs py-xxs peer-checked:bg-grøn-500 peer-checked:text-white peer-checked:border-grøn-500"
+              >
+                DANMARK
+              </div>
+            </label>
+
+            <!-- RESTEN AF VERDEN -->
+            <label class="cursor-pointer">
+              <input
+                type="radio"
+                name="region"
+                value="resten-af-verden"
+                class="peer hidden"
+              />
+              <div
+                class="border border-grå-900 hover:border-2 h4_grå text-h4_mobil md:text-h4_desk px-xs py-xxs peer-checked:bg-grøn-500 peer-checked:text-white peer-checked:border-grøn-500"
+              >
+                RESTEN AF VERDEN
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="pt-s md:pt-xs pb-lg">
+          <a href="/takforbestilling"><Button>FØJ TIL KURVEN</Button></a>
+        </div>
       </div>
     </div>
   </section>
-
-  <a class="grid justify-items-center pb-lg pt-s" href="/takforbestilling"
-    ><Button>FØJ TIL KURVEN</Button></a
-  >
 </MainLayout>
