@@ -1,0 +1,47 @@
+<section>
+  <div
+    class="flex items-center justify-between w-[240px] md:w-[264px] p-2 border-2 border-rød-500 mb-s py-xs ml-md md:ml-0"
+  >
+    <!-- Minus knap -->
+    <button class="button" id="minus-button">-</button>
+
+    <!-- Antalsdisplay -->
+    <span id="counter" class="counter">1</span>
+
+    <!-- Plus knap -->
+    <button class="button" id="plus-button">+</button>
+  </div>
+
+  <script>
+    // Initial værdi for tælleren
+    let count = 1;
+
+    // Få fat i knapperne og displayet
+    const minusButton = document.getElementById("minus-button");
+    const plusButton = document.getElementById("plus-button");
+    const counterElement = document.getElementById("counter");
+
+    // Funktion til at mindske værdien
+    function decrement() {
+      if (count > 0) {
+        count--;
+        updateCounter();
+      }
+    }
+
+    // Funktion til at øge værdien
+    function increment() {
+      count++;
+      updateCounter();
+    }
+
+    // Funktion til at opdatere tælleren
+    function updateCounter() {
+      counterElement.textContent = count;
+    }
+
+    // Event listeners for knapperne
+    minusButton.addEventListener("click", decrement);
+    plusButton.addEventListener("click", increment);
+  </script>
+</section>
