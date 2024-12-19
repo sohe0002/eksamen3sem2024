@@ -14,6 +14,7 @@ import GronButton from "../components/GronButton.astro";
 import RodBorderButton from "../components/RodBorderButton.astro";
 import RodButton from "../components/RodButton.astro";
 import BlaButton from "../components/BlaButton.astro";
+import Button from "../components/Button.astro";
 import "motion";
 ---
 
@@ -564,14 +565,14 @@ import "motion";
           </p>
           <div class="flex-row flex gap-8 py-s">
             <GronBorderButton>UDFORSK VORES KAFFE</GronBorderButton>
-            <a href="/abonner"><GronButton>ABONNER</GronButton></a>
+            <a href="/abonner"><Button>ABONNER</Button></a>
           </div>
         </div>
         <div>
           <Image
             src={kaffer}
             alt="billeder af 4 kaffeposer"
-            class="md:w-1/2 md:top-[950px] md:right-[50px] md:absolute md:object-cover md:z-20 pb-s"
+            class="md:w-1/2 md:top-[950px] md:right-[40px] md:absolute md:object-cover md:z-20 pb-s"
             loading="lazy"
           />
         </div>
