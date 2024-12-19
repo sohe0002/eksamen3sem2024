@@ -29,6 +29,7 @@ import "motion";
         src={forside}
         alt="billeder af en kaffe samt 2 poser kaffebønner"
         class="w-full h-[800px] object-cover z-10 brightness-50"
+        loading="lazy"
       />
       <div class="absolute z-30 top-1/2 left-10">
         <h1
@@ -145,6 +146,7 @@ import "motion";
             src={kaffer}
             alt="billeder af 4 kaffeposer"
             class="md:w-1/2 md:top-[950px] md:right-[50px] md:absolute md:object-cover md:z-20 pb-s"
+            loading="lazy"
           />
         </div>
       </div>
@@ -181,6 +183,7 @@ import "motion";
             src={kaffeflyver}
             alt="billeder af kaffeposer der flyver"
             class="md:w-2/5 md:top-[1760px] md:right-[100px] md:absolute md:object-cover md:z-20"
+            loading="lazy"
           />
         </div>
       </div>
@@ -422,6 +425,7 @@ import "motion";
             src={ansatte}
             alt="billeder af ansatte hos coffee collective"
             class="py-s h-4/5 object-cover"
+            loading="lazy"
           />
         </div>
       </div>
@@ -443,6 +447,7 @@ import "motion";
           src={farm}
           alt="billeder af kvinde der plukker bønner fra kaffeplanter"
           class="h-[600px] w-full object-cover mt-s"
+          loading="lazy"
         />
         <div>
           <p class="mt-s p_grå">
@@ -460,16 +465,19 @@ import "motion";
               src={farmer4}
               alt="billeder af en kaffefarmer"
               class="md:object-cover md:z-20"
+              loading="lazy"
             />
             <Image
               src={farmer3}
               alt="billeder af en farm"
               class="h-full md:object-cover md:z-20"
+              loading="lazy"
             />
             <Image
               src={farmer2}
               alt="billeder af 2 mænd på en kaffefarm"
               class="h-full md:object-cover md:z-20"
+              loading="lazy"
             />
           </div>
         </div>
@@ -1084,7 +1092,7 @@ import "motion";
     inView(section1h2Fadeup, () => {
       section1h2Fadeup.classList.add(
         "animate__animated",
-        "animate__fadeInUpBig"
+        "animate__fadeInUpBig",
       );
     });
 
@@ -1094,7 +1102,7 @@ import "motion";
     inView(section1h4Fadeup, () => {
       section1h4Fadeup.classList.add(
         "animate__animated",
-        "animate__fadeInUpBig"
+        "animate__fadeInUpBig",
       );
     });
 
@@ -1104,7 +1112,7 @@ import "motion";
     inView(section1hrFadeup, () => {
       section1hrFadeup.classList.add(
         "animate__animated",
-        "animate__fadeInUpBig"
+        "animate__fadeInUpBig",
       );
     });
 
@@ -1114,7 +1122,7 @@ import "motion";
     inView(section1pFadeup, () => {
       section1pFadeup.classList.add(
         "animate__animated",
-        "animate__fadeInUpBig"
+        "animate__fadeInUpBig",
       );
     });
 
@@ -1125,7 +1133,7 @@ import "motion";
     inView(section2h2Fadeup, () => {
       section2h2Fadeup.classList.add(
         "animate__animated",
-        "animate__fadeInUpBig"
+        "animate__fadeInUpBig",
       );
     });
 
@@ -1135,7 +1143,7 @@ import "motion";
     inView(section2h4Fadeup, () => {
       section2h4Fadeup.classList.add(
         "animate__animated",
-        "animate__fadeInUpBig"
+        "animate__fadeInUpBig",
       );
     });
 
@@ -1145,7 +1153,7 @@ import "motion";
     inView(section2hrFadeup, () => {
       section2hrFadeup.classList.add(
         "animate__animated",
-        "animate__fadeInUpBig"
+        "animate__fadeInUpBig",
       );
     });
 
@@ -1155,7 +1163,7 @@ import "motion";
     inView(section2knapFadeup, () => {
       section2knapFadeup.classList.add(
         "animate__animated",
-        "animate__fadeInUpBig"
+        "animate__fadeInUpBig",
       );
     });
   </script>
@@ -1169,7 +1177,7 @@ import "motion";
         animate(
           `.mangeelementer${i}`,
           { x: [-2000 + i * 50, 0], y: [-50 + i * 10, 0] },
-          { duration: 1 + (i % 3) }
+          { duration: 1 + (i % 3) },
         );
       }
     });
