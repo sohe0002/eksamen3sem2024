@@ -1,55 +1,47 @@
----
-
----
-
-<div
-  class="flex items-center border border-rød-500 rounded-lg p-2 w-[265px] my-s"
->
-  <!-- Minus knap -->
-  <button
-    onclick="decrement()"
-    class="text-rød-500 text-xl font-bold px-3"
-    id="minus-button"
+<section>
+  <div
+    class="flex items-center justify-between w-[264px] p-2 border-2 border-rød-500 mb-s py-xs"
   >
-    -
-  </button>
+    <!-- Minus knap -->
+    <button class="button" id="minus-button">-</button>
 
-  <!-- Antalsdisplay -->
-  <span id="counter" class="text-lg mx-4">1</span>
+    <!-- Antalsdisplay -->
+    <span id="counter" class="counter">1</span>
 
-  <!-- Plus knap -->
-  <button
-    onclick="increment()"
-    class="text-rød-500 text-xl font-bold px-3"
-    id="plus-button"
-  >
-    +
-  </button>
-</div>
+    <!-- Plus knap -->
+    <button class="button" id="plus-button">+</button>
+  </div>
 
-<script>
-  // Variabel til at holde tælleren
-  let count = 1;
+  <script>
+    // Initial værdi for tælleren
+    let count = 1;
 
-  // Funktion til at øge tælleren
-  function increment() {
-    count++; // Forøg tælleren med 1
-    updateCounter(); // Opdater UI
-  }
-
-  // Funktion til at mindske tælleren
-  function decrement() {
-    if (count > 1) {
-      count--; // Mindsk tælleren med 1
-      updateCounter(); // Opdater UI
-    }
-  }
-
-  // Funktion til at opdatere tælleren i UI
-  function updateCounter() {
+    // Få fat i knapperne og displayet
+    const minusButton = document.getElementById("minus-button");
+    const plusButton = document.getElementById("plus-button");
     const counterElement = document.getElementById("counter");
-    if (counterElement) {
-      counterElement.textContent = count.toString(); // Vis opdateret tal
+
+    // Funktion til at mindske værdien
+    function decrement() {
+      if (count > 0) {
+        count--;
+        updateCounter();
+      }
     }
-  }
-</script>
+
+    // Funktion til at øge værdien
+    function increment() {
+      count++;
+      updateCounter();
+    }
+
+    // Funktion til at opdatere tælleren
+    function updateCounter() {
+      counterElement.textContent = count;
+    }
+
+    // Event listeners for knapperne
+    minusButton.addEventListener("click", decrement);
+    plusButton.addEventListener("click", increment);
+  </script>
+</section>
