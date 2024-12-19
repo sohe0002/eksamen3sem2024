@@ -12,6 +12,7 @@ import kaffeguide from "../assets/images/kaffeguide.webp";
 import kieni_es from "../assets/images/kieni_es.webp";
 import silvia from "../assets/images/silvia.webp";
 import aga from "/public/aga.webp";
+import ProduktKnap from "../components/ProduktKnap.astro";
 ---
 
 <MainLayout title="Bekele">
@@ -99,11 +100,16 @@ import aga from "/public/aga.webp";
           </p>
         </div>
         <!-- Knapper placeret i bunden -->
-        <div
-          class="flex gap-s text-h4_mobil mx-md lg:mx-xl lg:mt-auto lg:mb-2xl"
-        >
-          <Button>KØB</Button>
-          <BorderButton>ABONNER</BorderButton>
+        <div>
+          <div class="lg:mx-xl">
+            <ProduktKnap />
+          </div>
+          <div
+            class="flex gap-s text-h4_mobil mx-md lg:mx-xl lg:mt-auto lg:mb-2xl"
+          >
+            <Button>KØB</Button>
+            <BorderButton>ABONNER</BorderButton>
+          </div>
         </div>
       </div>
 

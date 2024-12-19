@@ -1,0 +1,55 @@
+---
+
+---
+
+<div
+  class="flex items-center border border-rød-500 rounded-lg p-2 w-[265px] my-s"
+>
+  <!-- Minus knap -->
+  <button
+    onclick="decrement()"
+    class="text-rød-500 text-xl font-bold px-3"
+    id="minus-button"
+  >
+    -
+  </button>
+
+  <!-- Antalsdisplay -->
+  <span id="counter" class="text-lg mx-4">1</span>
+
+  <!-- Plus knap -->
+  <button
+    onclick="increment()"
+    class="text-rød-500 text-xl font-bold px-3"
+    id="plus-button"
+  >
+    +
+  </button>
+</div>
+
+<script>
+  // Variabel til at holde tælleren
+  let count = 1;
+
+  // Funktion til at øge tælleren
+  function increment() {
+    count++; // Forøg tælleren med 1
+    updateCounter(); // Opdater UI
+  }
+
+  // Funktion til at mindske tælleren
+  function decrement() {
+    if (count > 1) {
+      count--; // Mindsk tælleren med 1
+      updateCounter(); // Opdater UI
+    }
+  }
+
+  // Funktion til at opdatere tælleren i UI
+  function updateCounter() {
+    const counterElement = document.getElementById("counter");
+    if (counterElement) {
+      counterElement.textContent = count.toString(); // Vis opdateret tal
+    }
+  }
+</script>
